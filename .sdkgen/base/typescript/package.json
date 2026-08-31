@@ -1,5 +1,5 @@
 {
-  "name": "@veritymedia/managebacplus",
+  "name": "@veritymedia/managebac-sdk",
   "version": "v2p3",
   "type": "module",
   "main": "./dist/index.js",

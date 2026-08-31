@@ -1,6 +1,11 @@
 {
+<<<<<<< custom code
   "name": "@veritymedia/managebacplus",
   "version": "0.2.3",
+=======
+  "name": "@veritymedia/managebac-sdk",
+  "version": "v2p3",
+>>>>>>> generated
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

@@ -1,0 +1,16 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+      - run: go build ./...
+      - run: go test ./...
+      # Go modules are published to the module proxy automatically on tag push;
+      # github.com/veritymedia/managebac-sdk becomes available via go get once tagged.

@@ -1,7 +1,7 @@
 # API V2P3 TypeScript SDK
 
 ```ts
-import ManageBacPlus from "@veritymedia/managebacplus";
+import ManageBacPlus from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus({ apiKey: process.env.MANAGE_BAC_PLUS_API_KEY });
 await client.coursework.listGradesForClass();

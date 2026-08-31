@@ -2,9 +2,9 @@
   "ir_version": "2026-05-25.mvp1",
   "source": {
     "spec_hash": "a70a6f9c4086b6a2e891b3bced21c7fd3b054463a113b426c3aa40ec4ff2705a",
-    "config_hash": "0109160405a6913be143111cf642ea6123bb54c44bc7cb5e797643ccad87bda0",
+    "config_hash": "6f4af044832174bb1e29d05f10b2fbca942ba321009ed9df45f807b78a162a70",
     "openapi_version": "3.0.3",
-    "generated_at": "2026-08-31T21:10:31.777Z"
+    "generated_at": "2026-08-31T21:50:26.404Z"
   },
   "api": {
     "name": "API V2P3",
@@ -40,7 +40,10 @@
   },
   "targets": {
     "typescript": {
-      "package_name": "@veritymedia/managebacplus"
+      "package_name": "@veritymedia/managebac-sdk"
+    },
+    "go": {
+      "module_path": "github.com/veritymedia/managebac-sdk"
     }
   },
   "resources": [
