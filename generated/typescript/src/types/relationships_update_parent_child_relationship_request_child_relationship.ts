@@ -1,0 +1,1 @@
+export type RelationshipsUpdateParentChildRelationshipRequestChildRelationship = "Mother" | "Father" | "Stepmother" | "Stepfather" | "Legal Guardian" | "Grandmother" | "Grandfather" | "Sister" | "Brother" | "Uncle" | "Aunt" | "Other Guardian" | "Consultant Recruiter" | (string & {});

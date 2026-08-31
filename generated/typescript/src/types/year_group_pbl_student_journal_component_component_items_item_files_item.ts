@@ -1,0 +1,3 @@
+import type { YearGroupPblStudentJournalComponentComponentItemsItemFilesItemVariant1 } from "./year_group_pbl_student_journal_component_component_items_item_files_item_variant1.js";
+
+export type YearGroupPblStudentJournalComponentComponentItemsItemFilesItem = YearGroupPblStudentJournalComponentComponentItemsItemFilesItemVariant1 | { [key: string]: unknown };

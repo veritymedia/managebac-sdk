@@ -1,0 +1,5 @@
+import type { RelationshipsUpdateParentChildRelationshipRequestChildRelationship } from "./relationships_update_parent_child_relationship_request_child_relationship.js";
+
+export interface RelationshipsUpdateParentChildRelationshipRequestChild {
+  relationship?: RelationshipsUpdateParentChildRelationshipRequestChildRelationship;
+}

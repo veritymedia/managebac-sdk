@@ -1,0 +1,954 @@
+{
+  "listGradesForClass": {
+    "command": "coursework.listGradesForClass",
+    "http": "GET /v2p3/classes/{class_id}/assessments/term/{term_id}/grades",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listGradesForClass({ classId: \"classId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listTermGradesForClass": {
+    "command": "coursework.listTermGradesForClass",
+    "http": "GET /v2p3/classes/{class_id}/assessments/term/{term_id}/term-grades",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTermGradesForClass({ classId: \"classId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+    }
+  },
+  "SetAttendanceSettings": {
+    "command": "attendance.setAttendanceSettings",
+    "http": "PUT /v2p3/classes/{class_id}/academic-years/{academic_year_id}/attendance/settings",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.setAttendanceSettings({ classId: \"classId_value\", academicYearId: \"academicYearId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "listCategories": {
+    "command": "attendance.listCategories",
+    "http": "GET /v2p3/school/academic-years/{academic_year_id}/attendance_categories",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.listCategories({ academicYearId: \"academicYearId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listTokenResources": {
+    "command": "authentication.listTokenResources",
+    "http": "GET /v2p3/auth/permissions",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.authentication.listTokenResources();\nconsole.log(result);"
+    }
+  },
+  "createOAuthToken": {
+    "command": "authentication.createOauthToken",
+    "http": "POST /oauth/token",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.authentication.createOauthToken({ body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "showAvatarByID": {
+    "command": "utilities.showAvatarById",
+    "http": "GET /v2p3/avatars/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.utilities.showAvatarById({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "ping": {
+    "command": "utilities.ping",
+    "http": "GET /v2p3/ping",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.utilities.ping();\nconsole.log(result);"
+    }
+  },
+  "listBehaviorNotes": {
+    "command": "behaviorNotes.listBehaviorNotes",
+    "http": "GET /v2p3/behavior/notes",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.behaviorNotes.listBehaviorNotes();\nconsole.log(result);"
+    }
+  },
+  "listCriteriaforClass": {
+    "command": "coursework.listCriteriaforClass",
+    "http": "GET /v2p3/classes/{id}/criteria",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listCriteriaforClass({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getStudentsForClass": {
+    "command": "memberships.getStudentsForClass",
+    "http": "GET /v2p3/classes/{class_id}/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getStudentsForClass({ classId: \"classId_value\" });\nconsole.log(result);"
+    }
+  },
+  "bulkUpdateStudentsFromClass": {
+    "command": "extendedApis.bulkUpdateStudentsFromClass",
+    "http": "PATCH /v2p3/classes/{class_id}/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateStudentsFromClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "listClassTaskCategories": {
+    "command": "coursework.listClassTaskCategories",
+    "http": "GET /v2p3/classes/{id}/task_categories",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listClassTaskCategories({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "downloadSubmissionFile": {
+    "command": "coursework.downloadSubmissionFile",
+    "http": "GET /v2p3/classes/{class_id}/tasks/{task_id}/submissions/{student_id}/files/{asset_id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.downloadSubmissionFile({ classId: \"classId_value\", taskId: \"taskId_value\", studentId: \"studentId_value\", assetId: \"assetId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listTaskSubmissions": {
+    "command": "coursework.listTaskSubmissions",
+    "http": "GET /v2p3/classes/{class_id}/tasks/{task_id}/submissions",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTaskSubmissions({ classId: \"classId_value\", taskId: \"taskId_value\" });\nconsole.log(result);"
+    }
+  },
+  "getTaskSubmission": {
+    "command": "coursework.getTaskSubmission",
+    "http": "GET /v2p3/classes/{class_id}/tasks/{task_id}/submissions/{student_id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.getTaskSubmission({ classId: \"classId_value\", taskId: \"taskId_value\", studentId: \"studentId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listTasksforClass": {
+    "command": "coursework.listTasksforClass",
+    "http": "GET /v2p3/classes/{id}/tasks",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTasksforClass({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getTasksByIDforClass": {
+    "command": "coursework.getTasksByIdforClass",
+    "http": "GET /v2p3/classes/{class_id}/tasks/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.getTasksByIdforClass({ id: \"id_value\", classId: \"classId_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateTaskforClass": {
+    "command": "coursework.updateTaskforClass",
+    "http": "PUT /v2p3/classes/{class_id}/tasks/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.updateTaskforClass({ classId: \"classId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "partialUpdateTaskforClass": {
+    "command": "coursework.partialUpdateTaskforClass",
+    "http": "PATCH /v2p3/classes/{class_id}/tasks/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.partialUpdateTaskforClass({ classId: \"classId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "deleteTaskforClass": {
+    "command": "coursework.deleteTaskforClass",
+    "http": "DELETE /v2p3/classes/{class_id}/tasks/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.deleteTaskforClass({ classId: \"classId_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listStudentAssessmentResultsForClassTask": {
+    "command": "coursework.listStudentAssessmentResultsForClassTask",
+    "http": "GET /v2p3/classes/{class_id}/tasks/{id}/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listStudentAssessmentResultsForClassTask({ id: \"id_value\", classId: \"classId_value\" });\nconsole.log(result);"
+    }
+  },
+  "getClassTimetable": {
+    "command": "attendance.getClassTimetable",
+    "http": "GET /v2p3/classes/{class_id}/timetable",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getClassTimetable({ classId: \"classId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listClasses": {
+    "command": "classes.listClasses",
+    "http": "GET /v2p3/classes",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.listClasses();\nconsole.log(result);"
+    }
+  },
+  "createClass": {
+    "command": "classes.createClass",
+    "http": "POST /v2p3/classes",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.createClass({ body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "upsertClasses": {
+    "command": "extendedApis.upsertClasses",
+    "http": "PATCH /v2p3/classes",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.upsertClasses({ body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getClassByID": {
+    "command": "classes.getClassById",
+    "http": "GET /v2p3/classes/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.getClassById({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateClass": {
+    "command": "classes.updateClass",
+    "http": "PATCH /v2p3/classes/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.updateClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "addStudentsToClass": {
+    "command": "classes.addStudentsToClass",
+    "http": "POST /v2p3/classes/{id}/add_students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.addStudentsToClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "removeStudentsFromClass": {
+    "command": "classes.removeStudentsFromClass",
+    "http": "POST /v2p3/classes/{id}/remove_students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.removeStudentsFromClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getAttendanceForClass": {
+    "command": "attendance.getAttendanceForClass",
+    "http": "GET /v2p3/classes/{id}/attendance/term/{term_id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForClass({ id: \"id_value\", termId: \"termId_value\" });\nconsole.log(result);"
+    }
+  },
+  "getClassAttendanceForDate": {
+    "command": "attendance.getClassAttendanceForDate",
+    "http": "GET /v2p3/classes/{id}/attendance/date/{date}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getClassAttendanceForDate({ id: \"id_value\", date: \"date_value\" });\nconsole.log(result);"
+    }
+  },
+  "setClassAttendanceForStudents": {
+    "command": "extendedApis.setClassAttendanceForStudents",
+    "http": "PUT /v2p3/classes/{id}/attendance",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.setClassAttendanceForStudents({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getClassTerms": {
+    "command": "classes.getClassTerms",
+    "http": "GET /v2p3/classes/{id}/terms",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.getClassTerms({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getDateExcusals": {
+    "command": "attendance.getDateExcusals",
+    "http": "GET /v2p3/students/excusals/{date}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getDateExcusals({ date: \"date_value\" });\nconsole.log(result);"
+    }
+  },
+  "getAttendanceForYearGroupByTerm": {
+    "command": "attendance.getAttendanceForYearGroupByTerm",
+    "http": "GET /v2p3/year-groups/{year_group_id}/homeroom/attendance/term/{term_id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForYearGroupByTerm({ yearGroupId: \"yearGroupId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+    }
+  },
+  "getAttendanceForYearGroupByDate": {
+    "command": "attendance.getAttendanceForYearGroupByDate",
+    "http": "GET /v2p3/year-groups/{year_group_id}/homeroom/attendance/date/{date}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForYearGroupByDate({ yearGroupId: \"yearGroupId_value\", date: \"date_value\" });\nconsole.log(result);"
+    }
+  },
+  "getAttendanceAdjustmentsForYearGroupByTerm": {
+    "command": "attendance.getAttendanceAdjustmentsForYearGroupByTerm",
+    "http": "GET /v2p3/year-groups/{year_group_id}/homeroom/attendance/term/{term_id}/adjustments",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceAdjustmentsForYearGroupByTerm({ yearGroupId: \"yearGroupId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listMemberships": {
+    "command": "memberships.listMemberships",
+    "http": "GET /v2p3/memberships",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.listMemberships();\nconsole.log(result);"
+    }
+  },
+  "listOfParentChildrenRelationships": {
+    "command": "relationships.listOfParentChildrenRelationships",
+    "http": "GET /v2p3/parents/{parent_id}/children",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.listOfParentChildrenRelationships({ parentId: \"parentId_value\" });\nconsole.log(result);"
+    }
+  },
+  "createParentChildRelationship": {
+    "command": "relationships.createParentChildRelationship",
+    "http": "POST /v2p3/parents/{parent_id}/children",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.createParentChildRelationship({ parentId: \"parentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "bulkUpdateParentChildrenRelationships": {
+    "command": "relationships.bulkUpdateParentChildrenRelationships",
+    "http": "PUT /v2p3/parents/{parent_id}/children",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.bulkUpdateParentChildrenRelationships({ parentId: \"parentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getParentChildRelationship": {
+    "command": "relationships.getParentChildRelationship",
+    "http": "GET /v2p3/parents/{parent_id}/children/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.getParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateParentChildRelationship": {
+    "command": "relationships.updateParentChildRelationship",
+    "http": "PUT /v2p3/parents/{parent_id}/children/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.updateParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "deleteParentChildRelationship": {
+    "command": "relationships.deleteParentChildRelationship",
+    "http": "DELETE /v2p3/parents/{parent_id}/children/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.deleteParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listParents": {
+    "command": "parents.listParents",
+    "http": "GET /v2p3/parents",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.listParents();\nconsole.log(result);"
+    }
+  },
+  "createParent": {
+    "command": "parents.createParent",
+    "http": "POST /v2p3/parents",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.createParent({ body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getParentByID": {
+    "command": "parents.getParentById",
+    "http": "GET /v2p3/parents/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.getParentById({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateParent": {
+    "command": "parents.updateParent",
+    "http": "PATCH /v2p3/parents/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.updateParent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "archiveParent": {
+    "command": "parents.archiveParent",
+    "http": "PUT /v2p3/parents/{id}/archive",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.archiveParent({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "unarchiveParent": {
+    "command": "parents.unarchiveParent",
+    "http": "PUT /v2p3/parents/{id}/unarchive",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.unarchiveParent({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "sendParentWelcomeEmail": {
+    "command": "parents.sendParentWelcomeEmail",
+    "http": "POST /v2p3/parents/{id}/welcome_email",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.sendParentWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "createAcademicTerm": {
+    "command": "academics.createAcademicTerm",
+    "http": "POST /v2p3/school/programs/{program_code}/academic-years/{academic_year_id}/academic-terms",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "updateAcademicTerm": {
+    "command": "academics.updateAcademicTerm",
+    "http": "PATCH /v2p3/school/programs/{program_code}/academic-years/{academic_year_id}/academic-terms/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "deleteAcademicTerm": {
+    "command": "academics.deleteAcademicTerm",
+    "http": "DELETE /v2p3/school/programs/{program_code}/academic-years/{academic_year_id}/academic-terms/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.deleteAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "get_v2p3_school_programs_program_code_academic_years_id": {
+    "command": "academics.retrieve",
+    "http": "GET /v2p3/school/programs/{program_code}/academic-years/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.retrieve({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "createAcademicYear": {
+    "command": "academics.createAcademicYear",
+    "http": "POST /v2p3/school/programs/{program_code}/academic-years",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createAcademicYear({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getAssessmentTypes": {
+    "command": "academics.getAssessmentTypes",
+    "http": "GET /v2p3/school/programs/{program_code}/assessment_types",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getAssessmentTypes({ programCode: \"programCode_value\" });\nconsole.log(result);"
+    }
+  },
+  "get_v2p3_school_programs_program_code_academic_years_academic_year_id_calendar": {
+    "command": "academics.list",
+    "http": "GET /v2p3/school/programs/{program_code}/academic-years/{academic_year_id}/calendar",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.list({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\" });\nconsole.log(result);"
+    }
+  },
+  "GetAllTermReports": {
+    "command": "academics.getAllTermReports",
+    "http": "GET /v2p3/school/programs/{program}/reports",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getAllTermReports({ program: \"program_value\" });\nconsole.log(result);"
+    }
+  },
+  "getTermReport": {
+    "command": "academics.getTermReport",
+    "http": "GET /v2p3/school/programs/{program}/reports/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getTermReport({ program: \"program_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "downloadTermReportFile": {
+    "command": "academics.downloadTermReportFile",
+    "http": "GET /v2p3/school/programs/{program}/reports/{id}/download/{kind}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.downloadTermReportFile({ program: \"program_value\", id: \"id_value\", kind: \"kind_value\" });\nconsole.log(result);"
+    }
+  },
+  "getSubjectGroups": {
+    "command": "academics.getSubjectGroups",
+    "http": "GET /v2p3/school/programs/{program_code}/subject-groups",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjectGroups({ programCode: \"programCode_value\" });\nconsole.log(result);"
+    }
+  },
+  "createSubjectGroup": {
+    "command": "academics.createSubjectGroup",
+    "http": "POST /v2p3/school/programs/{program_code}/subject-groups",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createSubjectGroup({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getSubjectGroup": {
+    "command": "academics.getSubjectGroup",
+    "http": "GET /v2p3/school/programs/{program_code}/subject-groups/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjectGroup({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateSubjectGroup": {
+    "command": "academics.updateSubjectGroup",
+    "http": "PATCH /v2p3/school/programs/{program_code}/subject-groups/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateSubjectGroup({ programCode: \"programCode_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "destroySubjectGroup": {
+    "command": "academics.destroySubjectGroup",
+    "http": "DELETE /v2p3/school/programs/{program_code}/subject-groups/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.destroySubjectGroup({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getSubjects": {
+    "command": "academics.getSubjects",
+    "http": "GET /v2p3/school/programs/{program_code}/subjects",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjects({ programCode: \"programCode_value\" });\nconsole.log(result);"
+    }
+  },
+  "createSubject": {
+    "command": "academics.createSubject",
+    "http": "POST /v2p3/school/programs/{program_code}/subjects",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createSubject({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getSubject": {
+    "command": "academics.getSubject",
+    "http": "GET /v2p3/school/programs/{program_code}/subjects/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubject({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateSubject": {
+    "command": "academics.updateSubject",
+    "http": "PUT /v2p3/school/programs/{program_code}/subjects/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateSubject({ programCode: \"programCode_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "deleteSubject": {
+    "command": "academics.deleteSubject",
+    "http": "DELETE /v2p3/school/programs/{program_code}/subjects/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.deleteSubject({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "bulkEnableSubjects": {
+    "command": "extendedApis.bulkEnableSubjects",
+    "http": "POST /v2p3/school/programs/{program_code}/subjects/bulk-enable",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkEnableSubjects({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "bulkDisableSubjects": {
+    "command": "extendedApis.bulkDisableSubjects",
+    "http": "POST /v2p3/school/programs/{program_code}/subjects/bulk-disable",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkDisableSubjects({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getSchool": {
+    "command": "academics.getSchool",
+    "http": "GET /v2p3/school",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSchool();\nconsole.log(result);"
+    }
+  },
+  "listAcademicYears": {
+    "command": "academics.listAcademicYears",
+    "http": "GET /v2p3/school/academic-years",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listAcademicYears();\nconsole.log(result);"
+    }
+  },
+  "listGrades": {
+    "command": "academics.listGrades",
+    "http": "GET /v2p3/school/grades",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listGrades();\nconsole.log(result);"
+    }
+  },
+  "listSubjects": {
+    "command": "academics.listSubjects",
+    "http": "GET /v2p3/school/subjects",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listSubjects();\nconsole.log(result);"
+    }
+  },
+  "listSchoolTermGradeScales": {
+    "command": "academics.listSchoolTermGradeScales",
+    "http": "GET /v2p3/school/term-grade-scales",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listSchoolTermGradeScales();\nconsole.log(result);"
+    }
+  },
+  "listTermRubrics": {
+    "command": "academics.listTermRubrics",
+    "http": "GET /v2p3/school/term-rubrics",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listTermRubrics();\nconsole.log(result);"
+    }
+  },
+  "updateStudentAvatar": {
+    "command": "students.updateStudentAvatar",
+    "http": "PUT /v2p3/students/{id}/avatar",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.updateStudentAvatar({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "deleteStudentAvatar": {
+    "command": "students.deleteStudentAvatar",
+    "http": "DELETE /v2p3/students/{id}/avatar",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.deleteStudentAvatar({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getStudentExcusals": {
+    "command": "attendance.getStudentExcusals",
+    "http": "GET /v2p3/students/{student_id}/excusals",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getStudentExcusals({ studentId: \"studentId_value\" });\nconsole.log(result);"
+    }
+  },
+  "createStudentExcusal": {
+    "command": "attendance.createStudentExcusal",
+    "http": "POST /v2p3/students/{student_id}/excusals",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.createStudentExcusal({ studentId: \"studentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "updateStudentExcusal": {
+    "command": "extendedApis.updateStudentExcusal",
+    "http": "PATCH /v2p3/students/{student_id}/excusals/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.updateStudentExcusal({ studentId: \"studentId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "deleteStudentExcusal": {
+    "command": "extendedApis.deleteStudentExcusal",
+    "http": "DELETE /v2p3/students/{student_id}/excusals/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.deleteStudentExcusal({ studentId: \"studentId_value\", id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listStudents": {
+    "command": "students.listStudents",
+    "http": "GET /v2p3/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.listStudents();\nconsole.log(result);"
+    }
+  },
+  "createStudent": {
+    "command": "students.createStudent",
+    "http": "POST /v2p3/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.createStudent({ body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getStudentByID": {
+    "command": "students.getStudentById",
+    "http": "GET /v2p3/students/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.getStudentById({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateStudent": {
+    "command": "students.updateStudent",
+    "http": "PATCH /v2p3/students/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.updateStudent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "archiveStudent": {
+    "command": "students.archiveStudent",
+    "http": "PUT /v2p3/students/{id}/archive",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.archiveStudent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "unarchiveStudent": {
+    "command": "students.unarchiveStudent",
+    "http": "PUT /v2p3/students/{id}/unarchive",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.unarchiveStudent({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getStudentMemberships": {
+    "command": "memberships.getStudentMemberships",
+    "http": "GET /v2p3/students/{id}/memberships",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getStudentMemberships({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "set_student_homeroom_attendance": {
+    "command": "extendedApis.setStudentHomeroomAttendance",
+    "http": "PUT /v2p3/students/{id}/set_homeroom_attendance",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.setStudentHomeroomAttendance({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "sendStudentWelcomeEmail": {
+    "command": "students.sendStudentWelcomeEmail",
+    "http": "POST /v2p3/students/{id}/welcome_email",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.sendStudentWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateOnlineAssessment": {
+    "command": "onlineAssessment.updateOnlineAssessment",
+    "http": "PATCH /v2p3/tasks/{task_id}/online_assessments/{assess_prep_uid}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.onlineAssessment.updateOnlineAssessment({ taskId: \"taskId_value\", assessPrepUid: \"assessPrepUid_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "UpdateStudentTaskGrades": {
+    "command": "extendedApis.updateStudentTaskGrades",
+    "http": "PATCH /v2p3/tasks/{task_id}/students/{student_id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.updateStudentTaskGrades({ taskId: \"taskId_value\", studentId: \"studentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "BulkUpdateStudentTaskGrades": {
+    "command": "extendedApis.bulkUpdateStudentTaskGrades",
+    "http": "PATCH /v2p3/tasks/{task_id}/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateStudentTaskGrades({ taskId: \"taskId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "BulkResetStudentsTaskGrades": {
+    "command": "coursework.bulkResetStudentsTaskGrades",
+    "http": "DELETE /v2p3/tasks/{task_id}/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.bulkResetStudentsTaskGrades({ taskId: \"taskId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "updateTeacherAvatar": {
+    "command": "teachers.updateTeacherAvatar",
+    "http": "PUT /v2p3/teachers/{id}/avatar",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.updateTeacherAvatar({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "deleteTeacherAvatar": {
+    "command": "teachers.deleteTeacherAvatar",
+    "http": "DELETE /v2p3/teachers/{id}/avatar",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.deleteTeacherAvatar({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listTeachers": {
+    "command": "teachers.listTeachers",
+    "http": "GET /v2p3/teachers",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeachers();\nconsole.log(result);"
+    }
+  },
+  "createTeacher": {
+    "command": "teachers.createTeacher",
+    "http": "POST /v2p3/teachers",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.createTeacher({ body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "getTeacherByID": {
+    "command": "teachers.getTeacherById",
+    "http": "GET /v2p3/teachers/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.getTeacherById({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "updateTeacher": {
+    "command": "teachers.updateTeacher",
+    "http": "PATCH /v2p3/teachers/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.updateTeacher({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "archiveTeacher": {
+    "command": "teachers.archiveTeacher",
+    "http": "PUT /v2p3/teachers/{id}/archive",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.archiveTeacher({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "unarchiveTeacher": {
+    "command": "teachers.unarchiveTeacher",
+    "http": "PUT /v2p3/teachers/{id}/unarchive",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.unarchiveTeacher({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listTeacherClassesMemberships": {
+    "command": "teachers.listTeacherClassesMemberships",
+    "http": "GET /v2p3/teachers/{id}/classes",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeacherClassesMemberships({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listTeacherGroupsMemberships": {
+    "command": "teachers.listTeacherGroupsMemberships",
+    "http": "GET /v2p3/teachers/{id}/groups",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeacherGroupsMemberships({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "sendTeacherWelcomeEmail": {
+    "command": "teachers.sendTeacherWelcomeEmail",
+    "http": "POST /v2p3/teachers/{id}/welcome_email",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.sendTeacherWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listUnitClassAssignments": {
+    "command": "unitClassAssignments.listUnitClassAssignments",
+    "http": "GET /v2p3/unit-class-assignments",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.unitClassAssignments.listUnitClassAssignments();\nconsole.log(result);"
+    }
+  },
+  "listUnits": {
+    "command": "units.listUnits",
+    "http": "GET /v2p3/units",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.units.listUnits();\nconsole.log(result);"
+    }
+  },
+  "getUnitByID": {
+    "command": "units.getUnitById",
+    "http": "GET /v2p3/units/{id}",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.units.getUnitById({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupCasExperiencesStudents": {
+    "command": "projects.listYearGroupCasExperiencesStudents",
+    "http": "GET /v2p3/year-groups/{id}/projects/cas/experiences/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupCasExperiencesStudents({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getYearGroupCas": {
+    "command": "projects.getYearGroupCas",
+    "http": "GET /v2p3/year-groups/{id}/projects/cas",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.getYearGroupCas({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupPblProposalStudentsDetails": {
+    "command": "projects.listYearGroupPblProposalStudentsDetails",
+    "http": "GET /v2p3/year-groups/{year_group_id}/projects/pbl/{project_id}/proposal/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblProposalStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupPblReflectionsStudentsDetails": {
+    "command": "projects.listYearGroupPblReflectionsStudentsDetails",
+    "http": "GET /v2p3/year-groups/{year_group_id}/projects/pbl/{project_id}/reflections/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblReflectionsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupPblTodosStudentsDetails": {
+    "command": "projects.listYearGroupPblTodosStudentsDetails",
+    "http": "GET /v2p3/year-groups/{year_group_id}/projects/pbl/{project_id}/todos/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblTodosStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupPblJournalStudentsDetails": {
+    "command": "projects.listYearGroupPblJournalStudentsDetails",
+    "http": "GET /v2p3/year-groups/{year_group_id}/projects/pbl/{project_id}/journal/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblJournalStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupPblDocumentsStudentsDetails": {
+    "command": "projects.listYearGroupPblDocumentsStudentsDetails",
+    "http": "GET /v2p3/year-groups/{year_group_id}/projects/pbl/{project_id}/documents/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblDocumentsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupPblPresentationStudentsDetails": {
+    "command": "projects.listYearGroupPblPresentationStudentsDetails",
+    "http": "GET /v2p3/year-groups/{year_group_id}/projects/pbl/{project_id}/presentation/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblPresentationStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupPblNotesAndInterviewsStudentsDetails": {
+    "command": "projects.listYearGroupPblNotesAndInterviewsStudentsDetails",
+    "http": "GET /v2p3/year-groups/{year_group_id}/projects/pbl/{project_id}/notes_and_interviews/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblNotesAndInterviewsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupProjectBasedLearningTemplates": {
+    "command": "projects.listYearGroupProjectBasedLearningTemplates",
+    "http": "GET /v2p3/year-groups/{id}/projects/pbl",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupProjectBasedLearningTemplates({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupServiceLearningCategoriesStudents": {
+    "command": "yearGroups.listYearGroupServiceLearningCategoriesStudents",
+    "http": "GET /v2p3/year-groups/{id}/projects/sl/categories/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroupServiceLearningCategoriesStudents({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroupServiceLearningOutcomesStudents": {
+    "command": "yearGroups.listYearGroupServiceLearningOutcomesStudents",
+    "http": "GET /v2p3/year-groups/{id}/projects/sl/outcomes/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroupServiceLearningOutcomesStudents({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getYearGroupServiceLearning": {
+    "command": "yearGroups.getYearGroupServiceLearning",
+    "http": "GET /v2p3/year-groups/{id}/projects/sl",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.getYearGroupServiceLearning({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "listYearGroups": {
+    "command": "yearGroups.listYearGroups",
+    "http": "GET /v2p3/year-groups",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroups();\nconsole.log(result);"
+    }
+  },
+  "listStudentsFromYearGroups": {
+    "command": "yearGroups.listStudentsFromYearGroups",
+    "http": "GET /v2p3/year-groups/{id}/students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listStudentsFromYearGroups({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "addStudentToYearGroup": {
+    "command": "yearGroups.addStudentToYearGroup",
+    "http": "POST /v2p3/year-groups/{id}/add_students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.addStudentToYearGroup({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "removeStudentToYearGroup": {
+    "command": "yearGroups.removeStudentToYearGroup",
+    "http": "POST /v2p3/year-groups/{id}/remove_students",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.removeStudentToYearGroup({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "listAdvisorsFromYearGroup": {
+    "command": "yearGroups.listAdvisorsFromYearGroup",
+    "http": "GET /v2p3/year-groups/{id}/advisors",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listAdvisorsFromYearGroup({ id: \"id_value\" });\nconsole.log(result);"
+    }
+  },
+  "getTeacherMemberships": {
+    "command": "memberships.getTeacherMemberships",
+    "http": "GET /v2p3/classes/{class_id}/teachers",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getTeacherMemberships({ classId: \"classId_value\" });\nconsole.log(result);"
+    }
+  },
+  "bulkUpdateTeacherMemberships": {
+    "command": "extendedApis.bulkUpdateTeacherMemberships",
+    "http": "PUT /v2p3/classes/{class_id}/teachers",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateTeacherMemberships({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "addTeachersToClass": {
+    "command": "classes.addTeachersToClass",
+    "http": "POST /v2p3/classes/{class_id}/teachers/add_teachers",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.addTeachersToClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "removeTeachersFromClass": {
+    "command": "memberships.removeTeachersFromClass",
+    "http": "DELETE /v2p3/classes/{class_id}/teachers/remove_teachers",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.removeTeachersFromClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  },
+  "createTaskforClass": {
+    "command": "coursework.createTaskforClass",
+    "http": "POST /v2p3/classes/{class_id}/tasks",
+    "samples": {
+      "typescript": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.createTaskforClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+    }
+  }
+}

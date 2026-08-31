@@ -1,0 +1,17 @@
+name: supply-chain
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+jobs:
+  attest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # SLSA build provenance + SBOM attestation for every generated artifact.
+      - uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: "generated/**/dist/**"

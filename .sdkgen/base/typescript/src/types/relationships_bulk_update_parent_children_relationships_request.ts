@@ -1,0 +1,5 @@
+import type { RelationshipsBulkUpdateParentChildrenRelationshipsRequestChildrenItem } from "./relationships_bulk_update_parent_children_relationships_request_children_item.js";
+
+export interface RelationshipsBulkUpdateParentChildrenRelationshipsRequest {
+  children: RelationshipsBulkUpdateParentChildrenRelationshipsRequestChildrenItem[];
+}

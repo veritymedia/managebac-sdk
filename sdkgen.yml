@@ -1,0 +1,9 @@
+sdkgen: 1
+project: {
+  name: ManageBacPlus
+}
+spec:
+  path: "openapi/managebac-plus-public-apis-v2p3.yaml"
+targets:
+  typescript:
+      package_name: "@veritymedia/managebacplus"
