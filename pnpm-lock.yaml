@@ -1,0 +1,33 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@crevious/inox':
+        specifier: ^0.1.2
+        version: 0.1.2
+
+packages:
+
+  '@crevious/inox@0.1.2':
+    resolution: {integrity: sha512-L0QhA0uge09o7q45uq1tcpLejUXUSKINxfhoDoVAHM3VF2f6g16aMgcfl+frGn4TqxSiy7RLo07nmk5i+jYEqw==}
+    engines: {node: '>=22'}
+    hasBin: true
+
+  yaml@2.9.0:
+    resolution: {integrity: sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
+snapshots:
+
+  '@crevious/inox@0.1.2':
+    dependencies:
+      yaml: 2.9.0
+
+  yaml@2.9.0: {}
