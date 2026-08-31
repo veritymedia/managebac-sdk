@@ -1,6 +1,6 @@
 {
   "name": "manage-bac-plus-mcp",
-  "version": "0.2.3",
+  "version": "v2p3",
   "private": true,
   "type": "module",
   "bin": {

@@ -11,7 +11,7 @@ import (
 
 func main() {
 	if err := providerserver.Serve(context.Background(), provider.New, providerserver.ServeOpts{
-		Address: "registry.terraform.io/ManageBacPlus/managebacplus",
+		Address: "registry.terraform.io/veritymedia/managebacplus",
 	}); err != nil {
 		log.Fatal(err)
 	}

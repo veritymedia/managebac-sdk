@@ -6717,7 +6717,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listGradesForClass({ classId: \"classId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listGradesForClass({ classId: \"classId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.ListGradesForClass(context.TODO(), CourseworkListGradesForClassParams{})"
           }
         ]
       }
@@ -7073,7 +7078,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTermGradesForClass({ classId: \"classId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTermGradesForClass({ classId: \"classId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.ListTermGradesForClass(context.TODO(), CourseworkListTermGradesForClassParams{})"
           }
         ]
       }
@@ -7170,7 +7180,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.setAttendanceSettings({ classId: \"classId_value\", academicYearId: \"academicYearId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.setAttendanceSettings({ classId: \"classId_value\", academicYearId: \"academicYearId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.SetAttendanceSettings(context.TODO(), AttendanceSetAttendanceSettingsParams{})"
           }
         ]
       }
@@ -7274,7 +7289,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.listCategories({ academicYearId: \"academicYearId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.listCategories({ academicYearId: \"academicYearId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.ListCategories(context.TODO(), AttendanceListCategoriesParams{})"
           }
         ]
       }
@@ -7303,7 +7323,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.authentication.listTokenResources();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.authentication.listTokenResources();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Authentication.ListTokenResources(context.TODO())"
           }
         ]
       }
@@ -7363,7 +7388,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.authentication.createOauthToken({ body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.authentication.createOauthToken({ body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Authentication.CreateOauthToken(context.TODO(), AuthenticationCreateOauthTokenParams{})"
           }
         ]
       }
@@ -7419,7 +7449,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.utilities.showAvatarById({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.utilities.showAvatarById({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Utilities.ShowAvatarById(context.TODO(), UtilitiesShowAvatarByIdParams{})"
           }
         ]
       }
@@ -7452,7 +7487,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.utilities.ping();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.utilities.ping();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Utilities.Ping(context.TODO())"
           }
         ]
       }
@@ -7581,7 +7621,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.behaviorNotes.listBehaviorNotes();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.behaviorNotes.listBehaviorNotes();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.BehaviorNotes.ListBehaviorNotes(context.TODO())"
           }
         ]
       }
@@ -7641,7 +7686,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listCriteriaforClass({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listCriteriaforClass({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.ListCriteriaforClass(context.TODO(), CourseworkListCriteriaforClassParams{})"
           }
         ]
       }
@@ -7726,7 +7776,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getStudentsForClass({ classId: \"classId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getStudentsForClass({ classId: \"classId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Memberships.GetStudentsForClass(context.TODO(), MembershipsGetStudentsForClassParams{})"
           }
         ]
       },
@@ -7816,7 +7871,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateStudentsFromClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateStudentsFromClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.BulkUpdateStudentsFromClass(context.TODO(), ExtendedApisBulkUpdateStudentsFromClassParams{})"
           }
         ]
       }
@@ -7927,7 +7987,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listClassTaskCategories({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listClassTaskCategories({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.ListClassTaskCategories(context.TODO(), CourseworkListClassTaskCategoriesParams{})"
           }
         ]
       }
@@ -8014,7 +8079,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.downloadSubmissionFile({ classId: \"classId_value\", taskId: \"taskId_value\", studentId: \"studentId_value\", assetId: \"assetId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.downloadSubmissionFile({ classId: \"classId_value\", taskId: \"taskId_value\", studentId: \"studentId_value\", assetId: \"assetId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.DownloadSubmissionFile(context.TODO(), CourseworkDownloadSubmissionFileParams{})"
           }
         ]
       }
@@ -8178,7 +8248,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTaskSubmissions({ classId: \"classId_value\", taskId: \"taskId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTaskSubmissions({ classId: \"classId_value\", taskId: \"taskId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.ListTaskSubmissions(context.TODO(), CourseworkListTaskSubmissionsParams{})"
           }
         ]
       }
@@ -8295,7 +8370,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.getTaskSubmission({ classId: \"classId_value\", taskId: \"taskId_value\", studentId: \"studentId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.getTaskSubmission({ classId: \"classId_value\", taskId: \"taskId_value\", studentId: \"studentId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.GetTaskSubmission(context.TODO(), CourseworkGetTaskSubmissionParams{})"
           }
         ]
       }
@@ -8468,7 +8548,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTasksforClass({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listTasksforClass({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.ListTasksforClass(context.TODO(), CourseworkListTasksforClassParams{})"
           }
         ]
       }
@@ -8598,7 +8683,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.getTasksByIdforClass({ id: \"id_value\", classId: \"classId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.getTasksByIdforClass({ id: \"id_value\", classId: \"classId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.GetTasksByIdforClass(context.TODO(), CourseworkGetTasksByIdforClassParams{})"
           }
         ]
       },
@@ -8778,7 +8868,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.updateTaskforClass({ classId: \"classId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.updateTaskforClass({ classId: \"classId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.UpdateTaskforClass(context.TODO(), CourseworkUpdateTaskforClassParams{})"
           }
         ]
       },
@@ -8959,7 +9054,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.partialUpdateTaskforClass({ classId: \"classId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.partialUpdateTaskforClass({ classId: \"classId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.PartialUpdateTaskforClass(context.TODO(), CourseworkPartialUpdateTaskforClassParams{})"
           }
         ]
       },
@@ -9005,7 +9105,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.deleteTaskforClass({ classId: \"classId_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.deleteTaskforClass({ classId: \"classId_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.DeleteTaskforClass(context.TODO(), CourseworkDeleteTaskforClassParams{})"
           }
         ]
       }
@@ -9235,7 +9340,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listStudentAssessmentResultsForClassTask({ id: \"id_value\", classId: \"classId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.listStudentAssessmentResultsForClassTask({ id: \"id_value\", classId: \"classId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.ListStudentAssessmentResultsForClassTask(context.TODO(), CourseworkListStudentAssessmentResultsForClassTaskParams{})"
           }
         ]
       }
@@ -9600,7 +9710,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getClassTimetable({ classId: \"classId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getClassTimetable({ classId: \"classId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.GetClassTimetable(context.TODO(), AttendanceGetClassTimetableParams{})"
           }
         ]
       }
@@ -9738,7 +9853,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.listClasses();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.listClasses();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Classes.ListClasses(context.TODO())"
           }
         ]
       },
@@ -9813,7 +9933,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.createClass({ body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.createClass({ body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Classes.CreateClass(context.TODO(), ClassesCreateClassParams{})"
           }
         ]
       },
@@ -9862,7 +9987,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.upsertClasses({ body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.upsertClasses({ body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.UpsertClasses(context.TODO(), ExtendedApisUpsertClassesParams{})"
           }
         ]
       }
@@ -9952,7 +10082,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.getClassById({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.getClassById({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Classes.GetClassById(context.TODO(), ClassesGetClassByIdParams{})"
           }
         ]
       },
@@ -10070,7 +10205,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.updateClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.updateClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Classes.UpdateClass(context.TODO(), ClassesUpdateClassParams{})"
           }
         ]
       }
@@ -10141,7 +10281,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.addStudentsToClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.addStudentsToClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Classes.AddStudentsToClass(context.TODO(), ClassesAddStudentsToClassParams{})"
           }
         ]
       }
@@ -10212,7 +10357,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.removeStudentsFromClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.removeStudentsFromClass({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Classes.RemoveStudentsFromClass(context.TODO(), ClassesRemoveStudentsFromClassParams{})"
           }
         ]
       }
@@ -10349,7 +10499,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForClass({ id: \"id_value\", termId: \"termId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForClass({ id: \"id_value\", termId: \"termId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.GetAttendanceForClass(context.TODO(), AttendanceGetAttendanceForClassParams{})"
           }
         ]
       }
@@ -10466,7 +10621,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getClassAttendanceForDate({ id: \"id_value\", date: \"date_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getClassAttendanceForDate({ id: \"id_value\", date: \"date_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.GetClassAttendanceForDate(context.TODO(), AttendanceGetClassAttendanceForDateParams{})"
           }
         ]
       }
@@ -10583,7 +10743,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.setClassAttendanceForStudents({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.setClassAttendanceForStudents({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.SetClassAttendanceForStudents(context.TODO(), ExtendedApisSetClassAttendanceForStudentsParams{})"
           }
         ]
       }
@@ -10686,7 +10851,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.getClassTerms({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.getClassTerms({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Classes.GetClassTerms(context.TODO(), ClassesGetClassTermsParams{})"
           }
         ]
       }
@@ -10824,7 +10994,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getDateExcusals({ date: \"date_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getDateExcusals({ date: \"date_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.GetDateExcusals(context.TODO(), AttendanceGetDateExcusalsParams{})"
           }
         ]
       }
@@ -10957,7 +11132,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForYearGroupByTerm({ yearGroupId: \"yearGroupId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForYearGroupByTerm({ yearGroupId: \"yearGroupId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.GetAttendanceForYearGroupByTerm(context.TODO(), AttendanceGetAttendanceForYearGroupByTermParams{})"
           }
         ]
       }
@@ -11052,7 +11232,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForYearGroupByDate({ yearGroupId: \"yearGroupId_value\", date: \"date_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceForYearGroupByDate({ yearGroupId: \"yearGroupId_value\", date: \"date_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.GetAttendanceForYearGroupByDate(context.TODO(), AttendanceGetAttendanceForYearGroupByDateParams{})"
           }
         ]
       }
@@ -11142,7 +11327,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceAdjustmentsForYearGroupByTerm({ yearGroupId: \"yearGroupId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getAttendanceAdjustmentsForYearGroupByTerm({ yearGroupId: \"yearGroupId_value\", termId: \"termId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.GetAttendanceAdjustmentsForYearGroupByTerm(context.TODO(), AttendanceGetAttendanceAdjustmentsForYearGroupByTermParams{})"
           }
         ]
       }
@@ -11340,7 +11530,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.listMemberships();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.listMemberships();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Memberships.ListMemberships(context.TODO())"
           }
         ]
       }
@@ -11437,7 +11632,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.listOfParentChildrenRelationships({ parentId: \"parentId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.listOfParentChildrenRelationships({ parentId: \"parentId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Relationships.ListOfParentChildrenRelationships(context.TODO(), RelationshipsListOfParentChildrenRelationshipsParams{})"
           }
         ]
       },
@@ -11561,7 +11761,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.createParentChildRelationship({ parentId: \"parentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.createParentChildRelationship({ parentId: \"parentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Relationships.CreateParentChildRelationship(context.TODO(), RelationshipsCreateParentChildRelationshipParams{})"
           }
         ]
       },
@@ -11694,7 +11899,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.bulkUpdateParentChildrenRelationships({ parentId: \"parentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.bulkUpdateParentChildrenRelationships({ parentId: \"parentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Relationships.BulkUpdateParentChildrenRelationships(context.TODO(), RelationshipsBulkUpdateParentChildrenRelationshipsParams{})"
           }
         ]
       }
@@ -11790,7 +12000,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.getParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.getParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Relationships.GetParentChildRelationship(context.TODO(), RelationshipsGetParentChildRelationshipParams{})"
           }
         ]
       },
@@ -11947,7 +12162,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.updateParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.updateParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Relationships.UpdateParentChildRelationship(context.TODO(), RelationshipsUpdateParentChildRelationshipParams{})"
           }
         ]
       },
@@ -12019,7 +12239,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.deleteParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.relationships.deleteParentChildRelationship({ parentId: \"parentId_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Relationships.DeleteParentChildRelationship(context.TODO(), RelationshipsDeleteParentChildRelationshipParams{})"
           }
         ]
       }
@@ -12164,7 +12389,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.listParents();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.listParents();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Parents.ListParents(context.TODO())"
           }
         ]
       },
@@ -12296,7 +12526,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.createParent({ body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.createParent({ body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Parents.CreateParent(context.TODO(), ParentsCreateParentParams{})"
           }
         ]
       }
@@ -12389,7 +12624,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.getParentById({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.getParentById({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Parents.GetParentById(context.TODO(), ParentsGetParentByIdParams{})"
           }
         ]
       },
@@ -12520,7 +12760,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.updateParent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.updateParent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Parents.UpdateParent(context.TODO(), ParentsUpdateParentParams{})"
           }
         ]
       }
@@ -12570,7 +12815,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.archiveParent({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.archiveParent({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Parents.ArchiveParent(context.TODO(), ParentsArchiveParentParams{})"
           }
         ]
       }
@@ -12620,7 +12870,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.unarchiveParent({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.unarchiveParent({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Parents.UnarchiveParent(context.TODO(), ParentsUnarchiveParentParams{})"
           }
         ]
       }
@@ -12673,7 +12928,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.sendParentWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.parents.sendParentWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Parents.SendParentWelcomeEmail(context.TODO(), ParentsSendParentWelcomeEmailParams{})"
           }
         ]
       }
@@ -12767,7 +13027,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.CreateAcademicTerm(context.TODO(), AcademicsCreateAcademicTermParams{})"
           }
         ]
       }
@@ -12881,7 +13146,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.UpdateAcademicTerm(context.TODO(), AcademicsUpdateAcademicTermParams{})"
           }
         ]
       },
@@ -12974,7 +13244,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.deleteAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.deleteAcademicTerm({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.DeleteAcademicTerm(context.TODO(), AcademicsDeleteAcademicTermParams{})"
           }
         ]
       }
@@ -13044,7 +13319,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.retrieve({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.retrieve({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.Retrieve(context.TODO(), AcademicsRetrieveParams{})"
           }
         ]
       }
@@ -13114,7 +13394,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createAcademicYear({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createAcademicYear({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.CreateAcademicYear(context.TODO(), AcademicsCreateAcademicYearParams{})"
           }
         ]
       }
@@ -13165,7 +13450,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getAssessmentTypes({ programCode: \"programCode_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getAssessmentTypes({ programCode: \"programCode_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.GetAssessmentTypes(context.TODO(), AcademicsGetAssessmentTypesParams{})"
           }
         ]
       }
@@ -13270,7 +13560,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.list({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.list({ programCode: \"programCode_value\", academicYearId: \"academicYearId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.List(context.TODO(), AcademicsListParams{})"
           }
         ]
       }
@@ -13412,7 +13707,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getAllTermReports({ program: \"program_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getAllTermReports({ program: \"program_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.GetAllTermReports(context.TODO(), AcademicsGetAllTermReportsParams{})"
           }
         ]
       }
@@ -13521,7 +13821,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getTermReport({ program: \"program_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getTermReport({ program: \"program_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.GetTermReport(context.TODO(), AcademicsGetTermReportParams{})"
           }
         ]
       }
@@ -13584,7 +13889,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.downloadTermReportFile({ program: \"program_value\", id: \"id_value\", kind: \"kind_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.downloadTermReportFile({ program: \"program_value\", id: \"id_value\", kind: \"kind_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.DownloadTermReportFile(context.TODO(), AcademicsDownloadTermReportFileParams{})"
           }
         ]
       }
@@ -13662,7 +13972,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjectGroups({ programCode: \"programCode_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjectGroups({ programCode: \"programCode_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.GetSubjectGroups(context.TODO(), AcademicsGetSubjectGroupsParams{})"
           }
         ]
       },
@@ -13753,7 +14068,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createSubjectGroup({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createSubjectGroup({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.CreateSubjectGroup(context.TODO(), AcademicsCreateSubjectGroupParams{})"
           }
         ]
       }
@@ -13824,7 +14144,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjectGroup({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjectGroup({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.GetSubjectGroup(context.TODO(), AcademicsGetSubjectGroupParams{})"
           }
         ]
       },
@@ -13911,7 +14236,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateSubjectGroup({ programCode: \"programCode_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateSubjectGroup({ programCode: \"programCode_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.UpdateSubjectGroup(context.TODO(), AcademicsUpdateSubjectGroupParams{})"
           }
         ]
       },
@@ -14013,7 +14343,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.destroySubjectGroup({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.destroySubjectGroup({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.DestroySubjectGroup(context.TODO(), AcademicsDestroySubjectGroupParams{})"
           }
         ]
       }
@@ -14082,7 +14417,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjects({ programCode: \"programCode_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubjects({ programCode: \"programCode_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.GetSubjects(context.TODO(), AcademicsGetSubjectsParams{})"
           }
         ]
       },
@@ -14164,7 +14504,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createSubject({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.createSubject({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.CreateSubject(context.TODO(), AcademicsCreateSubjectParams{})"
           }
         ]
       }
@@ -14235,7 +14580,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubject({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSubject({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.GetSubject(context.TODO(), AcademicsGetSubjectParams{})"
           }
         ]
       },
@@ -14349,7 +14699,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateSubject({ programCode: \"programCode_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.updateSubject({ programCode: \"programCode_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.UpdateSubject(context.TODO(), AcademicsUpdateSubjectParams{})"
           }
         ]
       },
@@ -14425,7 +14780,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.deleteSubject({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.deleteSubject({ programCode: \"programCode_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.DeleteSubject(context.TODO(), AcademicsDeleteSubjectParams{})"
           }
         ]
       }
@@ -14500,7 +14860,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkEnableSubjects({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkEnableSubjects({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.BulkEnableSubjects(context.TODO(), ExtendedApisBulkEnableSubjectsParams{})"
           }
         ]
       }
@@ -14575,7 +14940,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkDisableSubjects({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkDisableSubjects({ programCode: \"programCode_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.BulkDisableSubjects(context.TODO(), ExtendedApisBulkDisableSubjectsParams{})"
           }
         ]
       }
@@ -14655,7 +15025,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSchool();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.getSchool();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.GetSchool(context.TODO())"
           }
         ]
       }
@@ -14808,7 +15183,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listAcademicYears();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listAcademicYears();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.ListAcademicYears(context.TODO())"
           }
         ]
       }
@@ -14930,7 +15310,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listGrades();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listGrades();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.ListGrades(context.TODO())"
           }
         ]
       }
@@ -15017,7 +15402,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listSubjects();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listSubjects();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.ListSubjects(context.TODO())"
           }
         ]
       }
@@ -15114,7 +15504,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listSchoolTermGradeScales();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listSchoolTermGradeScales();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.ListSchoolTermGradeScales(context.TODO())"
           }
         ]
       }
@@ -15305,7 +15700,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listTermRubrics();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.academics.listTermRubrics();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Academics.ListTermRubrics(context.TODO())"
           }
         ]
       }
@@ -15487,7 +15887,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.updateStudentAvatar({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.updateStudentAvatar({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.UpdateStudentAvatar(context.TODO(), StudentsUpdateStudentAvatarParams{})"
           }
         ]
       },
@@ -15557,7 +15962,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.deleteStudentAvatar({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.deleteStudentAvatar({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.DeleteStudentAvatar(context.TODO(), StudentsDeleteStudentAvatarParams{})"
           }
         ]
       }
@@ -15702,7 +16112,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getStudentExcusals({ studentId: \"studentId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.getStudentExcusals({ studentId: \"studentId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.GetStudentExcusals(context.TODO(), AttendanceGetStudentExcusalsParams{})"
           }
         ]
       },
@@ -15864,7 +16279,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.createStudentExcusal({ studentId: \"studentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.attendance.createStudentExcusal({ studentId: \"studentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Attendance.CreateStudentExcusal(context.TODO(), AttendanceCreateStudentExcusalParams{})"
           }
         ]
       }
@@ -16003,7 +16423,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.updateStudentExcusal({ studentId: \"studentId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.updateStudentExcusal({ studentId: \"studentId_value\", id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.UpdateStudentExcusal(context.TODO(), ExtendedApisUpdateStudentExcusalParams{})"
           }
         ]
       },
@@ -16088,7 +16513,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.deleteStudentExcusal({ studentId: \"studentId_value\", id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.deleteStudentExcusal({ studentId: \"studentId_value\", id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.DeleteStudentExcusal(context.TODO(), ExtendedApisDeleteStudentExcusalParams{})"
           }
         ]
       }
@@ -16314,7 +16744,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.listStudents();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.listStudents();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.ListStudents(context.TODO())"
           }
         ]
       },
@@ -16446,7 +16881,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.createStudent({ body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.createStudent({ body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.CreateStudent(context.TODO(), StudentsCreateStudentParams{})"
           }
         ]
       }
@@ -16541,7 +16981,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.getStudentById({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.getStudentById({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.GetStudentById(context.TODO(), StudentsGetStudentByIdParams{})"
           }
         ]
       },
@@ -16671,7 +17116,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.updateStudent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.updateStudent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.UpdateStudent(context.TODO(), StudentsUpdateStudentParams{})"
           }
         ]
       }
@@ -16749,7 +17199,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.archiveStudent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.archiveStudent({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.ArchiveStudent(context.TODO(), StudentsArchiveStudentParams{})"
           }
         ]
       }
@@ -16799,7 +17254,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.unarchiveStudent({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.unarchiveStudent({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.UnarchiveStudent(context.TODO(), StudentsUnarchiveStudentParams{})"
           }
         ]
       }
@@ -16950,7 +17410,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getStudentMemberships({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getStudentMemberships({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Memberships.GetStudentMemberships(context.TODO(), MembershipsGetStudentMembershipsParams{})"
           }
         ]
       }
@@ -17056,7 +17521,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.setStudentHomeroomAttendance({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.setStudentHomeroomAttendance({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.SetStudentHomeroomAttendance(context.TODO(), ExtendedApisSetStudentHomeroomAttendanceParams{})"
           }
         ]
       }
@@ -17109,7 +17579,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.sendStudentWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.students.sendStudentWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Students.SendStudentWelcomeEmail(context.TODO(), StudentsSendStudentWelcomeEmailParams{})"
           }
         ]
       }
@@ -17228,7 +17703,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.onlineAssessment.updateOnlineAssessment({ taskId: \"taskId_value\", assessPrepUid: \"assessPrepUid_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.onlineAssessment.updateOnlineAssessment({ taskId: \"taskId_value\", assessPrepUid: \"assessPrepUid_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.OnlineAssessment.UpdateOnlineAssessment(context.TODO(), OnlineAssessmentUpdateOnlineAssessmentParams{})"
           }
         ]
       }
@@ -17366,7 +17846,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.updateStudentTaskGrades({ taskId: \"taskId_value\", studentId: \"studentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.updateStudentTaskGrades({ taskId: \"taskId_value\", studentId: \"studentId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.UpdateStudentTaskGrades(context.TODO(), ExtendedApisUpdateStudentTaskGradesParams{})"
           }
         ]
       }
@@ -17453,7 +17938,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateStudentTaskGrades({ taskId: \"taskId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateStudentTaskGrades({ taskId: \"taskId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.BulkUpdateStudentTaskGrades(context.TODO(), ExtendedApisBulkUpdateStudentTaskGradesParams{})"
           }
         ]
       },
@@ -17520,7 +18010,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.bulkResetStudentsTaskGrades({ taskId: \"taskId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.bulkResetStudentsTaskGrades({ taskId: \"taskId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.BulkResetStudentsTaskGrades(context.TODO(), CourseworkBulkResetStudentsTaskGradesParams{})"
           }
         ]
       }
@@ -17678,7 +18173,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.updateTeacherAvatar({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.updateTeacherAvatar({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.UpdateTeacherAvatar(context.TODO(), TeachersUpdateTeacherAvatarParams{})"
           }
         ]
       },
@@ -17740,7 +18240,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.deleteTeacherAvatar({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.deleteTeacherAvatar({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.DeleteTeacherAvatar(context.TODO(), TeachersDeleteTeacherAvatarParams{})"
           }
         ]
       }
@@ -17884,7 +18389,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeachers();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeachers();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.ListTeachers(context.TODO())"
           }
         ]
       },
@@ -17986,7 +18496,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.createTeacher({ body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.createTeacher({ body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.CreateTeacher(context.TODO(), TeachersCreateTeacherParams{})"
           }
         ]
       }
@@ -18078,7 +18593,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.getTeacherById({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.getTeacherById({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.GetTeacherById(context.TODO(), TeachersGetTeacherByIdParams{})"
           }
         ]
       },
@@ -18188,7 +18708,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.updateTeacher({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.updateTeacher({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.UpdateTeacher(context.TODO(), TeachersUpdateTeacherParams{})"
           }
         ]
       }
@@ -18238,7 +18763,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.archiveTeacher({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.archiveTeacher({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.ArchiveTeacher(context.TODO(), TeachersArchiveTeacherParams{})"
           }
         ]
       }
@@ -18288,7 +18818,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.unarchiveTeacher({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.unarchiveTeacher({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.UnarchiveTeacher(context.TODO(), TeachersUnarchiveTeacherParams{})"
           }
         ]
       }
@@ -18428,7 +18963,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeacherClassesMemberships({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeacherClassesMemberships({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.ListTeacherClassesMemberships(context.TODO(), TeachersListTeacherClassesMembershipsParams{})"
           }
         ]
       }
@@ -18546,7 +19086,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeacherGroupsMemberships({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.listTeacherGroupsMemberships({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.ListTeacherGroupsMemberships(context.TODO(), TeachersListTeacherGroupsMembershipsParams{})"
           }
         ]
       }
@@ -18599,7 +19144,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.sendTeacherWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.teachers.sendTeacherWelcomeEmail({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Teachers.SendTeacherWelcomeEmail(context.TODO(), TeachersSendTeacherWelcomeEmailParams{})"
           }
         ]
       }
@@ -18749,7 +19299,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.unitClassAssignments.listUnitClassAssignments();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.unitClassAssignments.listUnitClassAssignments();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.UnitClassAssignments.ListUnitClassAssignments(context.TODO())"
           }
         ]
       }
@@ -18876,7 +19431,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.units.listUnits();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.units.listUnits();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Units.ListUnits(context.TODO())"
           }
         ]
       }
@@ -18948,7 +19508,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.units.getUnitById({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.units.getUnitById({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Units.GetUnitById(context.TODO(), UnitsGetUnitByIdParams{})"
           }
         ]
       }
@@ -19112,7 +19677,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupCasExperiencesStudents({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupCasExperiencesStudents({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupCasExperiencesStudents(context.TODO(), ProjectsListYearGroupCasExperiencesStudentsParams{})"
           }
         ]
       }
@@ -19192,7 +19762,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.getYearGroupCas({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.getYearGroupCas({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.GetYearGroupCas(context.TODO(), ProjectsGetYearGroupCasParams{})"
           }
         ]
       }
@@ -19304,7 +19879,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblProposalStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblProposalStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupPblProposalStudentsDetails(context.TODO(), ProjectsListYearGroupPblProposalStudentsDetailsParams{})"
           }
         ]
       }
@@ -19415,7 +19995,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblReflectionsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblReflectionsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupPblReflectionsStudentsDetails(context.TODO(), ProjectsListYearGroupPblReflectionsStudentsDetailsParams{})"
           }
         ]
       }
@@ -19564,7 +20149,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblTodosStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblTodosStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupPblTodosStudentsDetails(context.TODO(), ProjectsListYearGroupPblTodosStudentsDetailsParams{})"
           }
         ]
       }
@@ -19682,7 +20272,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblJournalStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblJournalStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupPblJournalStudentsDetails(context.TODO(), ProjectsListYearGroupPblJournalStudentsDetailsParams{})"
           }
         ]
       }
@@ -19791,7 +20386,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblDocumentsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblDocumentsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupPblDocumentsStudentsDetails(context.TODO(), ProjectsListYearGroupPblDocumentsStudentsDetailsParams{})"
           }
         ]
       }
@@ -19908,7 +20508,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblPresentationStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblPresentationStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupPblPresentationStudentsDetails(context.TODO(), ProjectsListYearGroupPblPresentationStudentsDetailsParams{})"
           }
         ]
       }
@@ -20021,7 +20626,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblNotesAndInterviewsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupPblNotesAndInterviewsStudentsDetails({ yearGroupId: \"yearGroupId_value\", projectId: \"projectId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupPblNotesAndInterviewsStudentsDetails(context.TODO(), ProjectsListYearGroupPblNotesAndInterviewsStudentsDetailsParams{})"
           }
         ]
       }
@@ -20114,7 +20724,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupProjectBasedLearningTemplates({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.projects.listYearGroupProjectBasedLearningTemplates({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Projects.ListYearGroupProjectBasedLearningTemplates(context.TODO(), ProjectsListYearGroupProjectBasedLearningTemplatesParams{})"
           }
         ]
       }
@@ -20270,7 +20885,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroupServiceLearningCategoriesStudents({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroupServiceLearningCategoriesStudents({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.YearGroups.ListYearGroupServiceLearningCategoriesStudents(context.TODO(), YearGroupsListYearGroupServiceLearningCategoriesStudentsParams{})"
           }
         ]
       }
@@ -20397,7 +21017,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroupServiceLearningOutcomesStudents({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroupServiceLearningOutcomesStudents({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.YearGroups.ListYearGroupServiceLearningOutcomesStudents(context.TODO(), YearGroupsListYearGroupServiceLearningOutcomesStudentsParams{})"
           }
         ]
       }
@@ -20495,7 +21120,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.getYearGroupServiceLearning({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.getYearGroupServiceLearning({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.YearGroups.GetYearGroupServiceLearning(context.TODO(), YearGroupsGetYearGroupServiceLearningParams{})"
           }
         ]
       }
@@ -20621,7 +21251,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroups();\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listYearGroups();\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.YearGroups.ListYearGroups(context.TODO())"
           }
         ]
       }
@@ -20806,7 +21441,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listStudentsFromYearGroups({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listStudentsFromYearGroups({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.YearGroups.ListStudentsFromYearGroups(context.TODO(), YearGroupsListStudentsFromYearGroupsParams{})"
           }
         ]
       }
@@ -20877,7 +21517,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.addStudentToYearGroup({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.addStudentToYearGroup({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.YearGroups.AddStudentToYearGroup(context.TODO(), YearGroupsAddStudentToYearGroupParams{})"
           }
         ]
       }
@@ -20948,7 +21593,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.removeStudentToYearGroup({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.removeStudentToYearGroup({ id: \"id_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.YearGroups.RemoveStudentToYearGroup(context.TODO(), YearGroupsRemoveStudentToYearGroupParams{})"
           }
         ]
       }
@@ -21016,7 +21666,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listAdvisorsFromYearGroup({ id: \"id_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.yearGroups.listAdvisorsFromYearGroup({ id: \"id_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.YearGroups.ListAdvisorsFromYearGroup(context.TODO(), YearGroupsListAdvisorsFromYearGroupParams{})"
           }
         ]
       }
@@ -21087,7 +21742,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getTeacherMemberships({ classId: \"classId_value\" });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.getTeacherMemberships({ classId: \"classId_value\" });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Memberships.GetTeacherMemberships(context.TODO(), MembershipsGetTeacherMembershipsParams{})"
           }
         ]
       },
@@ -21173,7 +21833,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateTeacherMemberships({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.extendedApis.bulkUpdateTeacherMemberships({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.ExtendedApis.BulkUpdateTeacherMemberships(context.TODO(), ExtendedApisBulkUpdateTeacherMembershipsParams{})"
           }
         ]
       }
@@ -21244,7 +21909,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.addTeachersToClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.classes.addTeachersToClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Classes.AddTeachersToClass(context.TODO(), ClassesAddTeachersToClassParams{})"
           }
         ]
       }
@@ -21315,7 +21985,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.removeTeachersFromClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.memberships.removeTeachersFromClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Memberships.RemoveTeachersFromClass(context.TODO(), MembershipsRemoveTeachersFromClassParams{})"
           }
         ]
       }
@@ -21504,7 +22179,12 @@
           {
             "lang": "ts",
             "label": "TypeScript",
-            "source": "import { ManageBacPlus } from \"@veritymedia/managebacplus\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.createTaskforClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+            "source": "import { ManageBacPlus } from \"@veritymedia/managebac-sdk\";\n\nconst client = new ManageBacPlus();\nconst result = await client.coursework.createTaskforClass({ classId: \"classId_value\", body: { /* ... */ } });\nconsole.log(result);"
+          },
+          {
+            "lang": "go",
+            "label": "Go",
+            "source": "client := managebacplus.NewClient()\nresult, err := client.Coursework.CreateTaskforClass(context.TODO(), CourseworkCreateTaskforClassParams{})"
           }
         ]
       }

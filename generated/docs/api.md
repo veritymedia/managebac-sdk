@@ -22,11 +22,15 @@ Get all Grades for a Class during an Academic Term
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.listGradesForClass({ classId: "classId_value", termId: "termId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.ListGradesForClass(context.TODO(), CourseworkListGradesForClassParams{})
 ```
 
 ### listTermGradesForClass
@@ -46,11 +50,15 @@ Get Term Grades for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.listTermGradesForClass({ classId: "classId_value", termId: "termId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.ListTermGradesForClass(context.TODO(), CourseworkListTermGradesForClassParams{})
 ```
 
 ### listCriteriaforClass
@@ -66,11 +74,15 @@ Get Criteria for a Class
 **Returns**: `CriteriaResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.listCriteriaforClass({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.ListCriteriaforClass(context.TODO(), CourseworkListCriteriaforClassParams{})
 ```
 
 ### listClassTaskCategories
@@ -86,11 +98,15 @@ Get Task Categories for Class
 **Returns**: `CourseworkListClassTaskCategoriesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.listClassTaskCategories({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.ListClassTaskCategories(context.TODO(), CourseworkListClassTaskCategoriesParams{})
 ```
 
 ### downloadSubmissionFile
@@ -109,11 +125,15 @@ Download a Submission File
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.downloadSubmissionFile({ classId: "classId_value", taskId: "taskId_value", studentId: "studentId_value", assetId: "assetId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.DownloadSubmissionFile(context.TODO(), CourseworkDownloadSubmissionFileParams{})
 ```
 
 ### listTaskSubmissions
@@ -133,11 +153,15 @@ List Student Submissions for a Task
 **Returns**: `CourseworkListTaskSubmissionsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.listTaskSubmissions({ classId: "classId_value", taskId: "taskId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.ListTaskSubmissions(context.TODO(), CourseworkListTaskSubmissionsParams{})
 ```
 
 ### getTaskSubmission
@@ -155,11 +179,15 @@ Get a Single Student Submission
 **Returns**: `CourseworkGetTaskSubmissionResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.getTaskSubmission({ classId: "classId_value", taskId: "taskId_value", studentId: "studentId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.GetTaskSubmission(context.TODO(), CourseworkGetTaskSubmissionParams{})
 ```
 
 ### listTasksforClass
@@ -176,11 +204,15 @@ Get Tasks for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.listTasksforClass({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.ListTasksforClass(context.TODO(), CourseworkListTasksforClassParams{})
 ```
 
 ### getTasksByIdforClass
@@ -197,11 +229,15 @@ Get a Task for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.getTasksByIdforClass({ id: "id_value", classId: "classId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.GetTasksByIdforClass(context.TODO(), CourseworkGetTasksByIdforClassParams{})
 ```
 
 ### updateTaskforClass
@@ -220,11 +256,15 @@ Update a Task for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.updateTaskforClass({ classId: "classId_value", id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.UpdateTaskforClass(context.TODO(), CourseworkUpdateTaskforClassParams{})
 ```
 
 ### partialUpdateTaskforClass
@@ -243,11 +283,15 @@ Partially Update a Task for a Class
 **Returns**: `CourseworkPartialUpdateTaskforClassResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.partialUpdateTaskforClass({ classId: "classId_value", id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.PartialUpdateTaskforClass(context.TODO(), CourseworkPartialUpdateTaskforClassParams{})
 ```
 
 ### deleteTaskforClass
@@ -264,11 +308,15 @@ Delete a Task for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.deleteTaskforClass({ classId: "classId_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.DeleteTaskforClass(context.TODO(), CourseworkDeleteTaskforClassParams{})
 ```
 
 ### listStudentAssessmentResultsForClassTask
@@ -286,11 +334,15 @@ Get Student Assessment Results for a Task and Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.listStudentAssessmentResultsForClassTask({ id: "id_value", classId: "classId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.ListStudentAssessmentResultsForClassTask(context.TODO(), CourseworkListStudentAssessmentResultsForClassTaskParams{})
 ```
 
 ### bulkResetStudentsTaskGrades
@@ -308,11 +360,15 @@ Bulk Delete Grades for Students for a Task
 **Returns**: `BulkStudentTaskGradeResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.bulkResetStudentsTaskGrades({ taskId: "taskId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.BulkResetStudentsTaskGrades(context.TODO(), CourseworkBulkResetStudentsTaskGradesParams{})
 ```
 
 ### createTaskforClass
@@ -330,11 +386,15 @@ Create a Task for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.coursework.createTaskforClass({ classId: "classId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Coursework.CreateTaskforClass(context.TODO(), CourseworkCreateTaskforClassParams{})
 ```
 
 ## attendance
@@ -355,11 +415,15 @@ Set or Update an Attendance Settings for a Class in an Academic Year
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.setAttendanceSettings({ classId: "classId_value", academicYearId: "academicYearId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.SetAttendanceSettings(context.TODO(), AttendanceSetAttendanceSettingsParams{})
 ```
 
 ### listCategories
@@ -375,11 +439,15 @@ Get Attendance Categories
 **Returns**: `AttendanceListCategoriesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.listCategories({ academicYearId: "academicYearId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.ListCategories(context.TODO(), AttendanceListCategoriesParams{})
 ```
 
 ### getClassTimetable
@@ -396,11 +464,15 @@ Get Class timetable
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.getClassTimetable({ classId: "classId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.GetClassTimetable(context.TODO(), AttendanceGetClassTimetableParams{})
 ```
 
 ### getAttendanceForClass
@@ -419,11 +491,15 @@ Get Attendance for a Class during an Academic Term
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.getAttendanceForClass({ id: "id_value", termId: "termId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.GetAttendanceForClass(context.TODO(), AttendanceGetAttendanceForClassParams{})
 ```
 
 ### getClassAttendanceForDate
@@ -441,11 +517,15 @@ Get Class Attendance for a Date
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.getClassAttendanceForDate({ id: "id_value", date: "date_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.GetClassAttendanceForDate(context.TODO(), AttendanceGetClassAttendanceForDateParams{})
 ```
 
 ### getDateExcusals
@@ -464,11 +544,15 @@ Get all Attendance Excusals for a date
 **Returns**: `AttendanceGetDateExcusalsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.getDateExcusals({ date: "date_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.GetDateExcusals(context.TODO(), AttendanceGetDateExcusalsParams{})
 ```
 
 ### getAttendanceForYearGroupByTerm
@@ -487,11 +571,15 @@ Get Homeroom Attendance for a Year Group and Term
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.getAttendanceForYearGroupByTerm({ yearGroupId: "yearGroupId_value", termId: "termId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.GetAttendanceForYearGroupByTerm(context.TODO(), AttendanceGetAttendanceForYearGroupByTermParams{})
 ```
 
 ### getAttendanceForYearGroupByDate
@@ -509,11 +597,15 @@ Get Homeroom Attendance for a Year Group by Date
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.getAttendanceForYearGroupByDate({ yearGroupId: "yearGroupId_value", date: "date_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.GetAttendanceForYearGroupByDate(context.TODO(), AttendanceGetAttendanceForYearGroupByDateParams{})
 ```
 
 ### getAttendanceAdjustmentsForYearGroupByTerm
@@ -530,11 +622,15 @@ Get Homeroom Attendance Adjustments for a Year Group and Term
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.getAttendanceAdjustmentsForYearGroupByTerm({ yearGroupId: "yearGroupId_value", termId: "termId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.GetAttendanceAdjustmentsForYearGroupByTerm(context.TODO(), AttendanceGetAttendanceAdjustmentsForYearGroupByTermParams{})
 ```
 
 ### getStudentExcusals
@@ -553,11 +649,15 @@ Get all Attendance Excusals for a student
 **Returns**: `AttendanceGetStudentExcusalsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.getStudentExcusals({ studentId: "studentId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.GetStudentExcusals(context.TODO(), AttendanceGetStudentExcusalsParams{})
 ```
 
 ### createStudentExcusal
@@ -575,11 +675,15 @@ Create Excusal for a Student
 **Returns**: `AttendanceExcusalsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.attendance.createStudentExcusal({ studentId: "studentId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Attendance.CreateStudentExcusal(context.TODO(), AttendanceCreateStudentExcusalParams{})
 ```
 
 ## authentication
@@ -593,11 +697,15 @@ Get all Permissions
 **Returns**: `AuthPermissionsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.authentication.listTokenResources();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Authentication.ListTokenResources(context.TODO())
 ```
 
 ### createOauthToken
@@ -611,11 +719,15 @@ Obtain an Access Token
 **Returns**: `OauthTokenResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.authentication.createOauthToken({ body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Authentication.CreateOauthToken(context.TODO(), AuthenticationCreateOauthTokenParams{})
 ```
 
 ## utilities
@@ -633,11 +745,15 @@ Get Avatar
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.utilities.showAvatarById({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Utilities.ShowAvatarById(context.TODO(), UtilitiesShowAvatarByIdParams{})
 ```
 
 ### ping
@@ -649,11 +765,15 @@ Ping
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.utilities.ping();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Utilities.Ping(context.TODO())
 ```
 
 ## behaviorNotes
@@ -674,11 +794,15 @@ Get all behavior notes
 **Returns**: `BehaviorNotesListBehaviorNotesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.behaviorNotes.listBehaviorNotes();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.BehaviorNotes.ListBehaviorNotes(context.TODO())
 ```
 
 ## memberships
@@ -698,11 +822,15 @@ Get Students for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.memberships.getStudentsForClass({ classId: "classId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Memberships.GetStudentsForClass(context.TODO(), MembershipsGetStudentsForClassParams{})
 ```
 
 ### listMemberships
@@ -726,11 +854,15 @@ Get all Memberships
 **Returns**: `MembershipsListMembershipsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.memberships.listMemberships();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Memberships.ListMemberships(context.TODO())
 ```
 
 ### getStudentMemberships
@@ -747,11 +879,15 @@ Get a Student's memberships
 **Returns**: `MembershipsGetStudentMembershipsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.memberships.getStudentMemberships({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Memberships.GetStudentMemberships(context.TODO(), MembershipsGetStudentMembershipsParams{})
 ```
 
 ### getTeacherMemberships
@@ -767,11 +903,15 @@ Get Teachers for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.memberships.getTeacherMemberships({ classId: "classId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Memberships.GetTeacherMemberships(context.TODO(), MembershipsGetTeacherMembershipsParams{})
 ```
 
 ### removeTeachersFromClass
@@ -789,11 +929,15 @@ Remove Teachers from a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.memberships.removeTeachersFromClass({ classId: "classId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Memberships.RemoveTeachersFromClass(context.TODO(), MembershipsRemoveTeachersFromClassParams{})
 ```
 
 ## extendedApis
@@ -813,11 +957,15 @@ Bulk update Students from a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.bulkUpdateStudentsFromClass({ classId: "classId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.BulkUpdateStudentsFromClass(context.TODO(), ExtendedApisBulkUpdateStudentsFromClassParams{})
 ```
 
 ### upsertClasses
@@ -831,11 +979,15 @@ Upsert many classes
 **Returns**: `UpsertClassesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.upsertClasses({ body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.UpsertClasses(context.TODO(), ExtendedApisUpsertClassesParams{})
 ```
 
 ### setClassAttendanceForStudents
@@ -853,11 +1005,15 @@ Set or Update a Class Attendance for Students
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.setClassAttendanceForStudents({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.SetClassAttendanceForStudents(context.TODO(), ExtendedApisSetClassAttendanceForStudentsParams{})
 ```
 
 ### bulkEnableSubjects
@@ -875,11 +1031,15 @@ Bulk Enable Subjects
 **Returns**: `ToggleSchoolSubjectsRequest`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.bulkEnableSubjects({ programCode: "programCode_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.BulkEnableSubjects(context.TODO(), ExtendedApisBulkEnableSubjectsParams{})
 ```
 
 ### bulkDisableSubjects
@@ -897,11 +1057,15 @@ Bulk Disable Subjects
 **Returns**: `ToggleSchoolSubjectsRequest`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.bulkDisableSubjects({ programCode: "programCode_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.BulkDisableSubjects(context.TODO(), ExtendedApisBulkDisableSubjectsParams{})
 ```
 
 ### updateStudentExcusal
@@ -920,11 +1084,15 @@ Update Excusal for a Student
 **Returns**: `AttendanceExcusalsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.updateStudentExcusal({ studentId: "studentId_value", id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.UpdateStudentExcusal(context.TODO(), ExtendedApisUpdateStudentExcusalParams{})
 ```
 
 ### deleteStudentExcusal
@@ -941,11 +1109,15 @@ Delete Excusal for a Student
 **Returns**: `AttendanceExcusalsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.deleteStudentExcusal({ studentId: "studentId_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.DeleteStudentExcusal(context.TODO(), ExtendedApisDeleteStudentExcusalParams{})
 ```
 
 ### setStudentHomeroomAttendance
@@ -963,11 +1135,15 @@ Set student homeroom attendance
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.setStudentHomeroomAttendance({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.SetStudentHomeroomAttendance(context.TODO(), ExtendedApisSetStudentHomeroomAttendanceParams{})
 ```
 
 ### updateStudentTaskGrades
@@ -986,11 +1162,15 @@ Update or Create a Grade for a Student for a Task
 **Returns**: `ExtendedApisUpdateStudentTaskGradesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.updateStudentTaskGrades({ taskId: "taskId_value", studentId: "studentId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.UpdateStudentTaskGrades(context.TODO(), ExtendedApisUpdateStudentTaskGradesParams{})
 ```
 
 ### bulkUpdateStudentTaskGrades
@@ -1008,11 +1188,15 @@ Bulk Update or Create Grades for Students for a Task
 **Returns**: `BulkStudentTaskGradeResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.bulkUpdateStudentTaskGrades({ taskId: "taskId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.BulkUpdateStudentTaskGrades(context.TODO(), ExtendedApisBulkUpdateStudentTaskGradesParams{})
 ```
 
 ### bulkUpdateTeacherMemberships
@@ -1030,11 +1214,15 @@ Set Teacher memberships for a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.extendedApis.bulkUpdateTeacherMemberships({ classId: "classId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.ExtendedApis.BulkUpdateTeacherMemberships(context.TODO(), ExtendedApisBulkUpdateTeacherMembershipsParams{})
 ```
 
 ## classes
@@ -1056,11 +1244,15 @@ Get all Classes
 **Returns**: `ClassesListClassesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.classes.listClasses();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Classes.ListClasses(context.TODO())
 ```
 
 ### createClass
@@ -1074,11 +1266,15 @@ Create a class
 **Returns**: `Class`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.classes.createClass({ body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Classes.CreateClass(context.TODO(), ClassesCreateClassParams{})
 ```
 
 ### getClassById
@@ -1094,11 +1290,15 @@ Get a Class
 **Returns**: `ClassesGetClassByIdResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.classes.getClassById({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Classes.GetClassById(context.TODO(), ClassesGetClassByIdParams{})
 ```
 
 ### updateClass
@@ -1116,11 +1316,15 @@ Update a class
 **Returns**: `Class`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.classes.updateClass({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Classes.UpdateClass(context.TODO(), ClassesUpdateClassParams{})
 ```
 
 ### addStudentsToClass
@@ -1138,11 +1342,15 @@ Add Students to a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.classes.addStudentsToClass({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Classes.AddStudentsToClass(context.TODO(), ClassesAddStudentsToClassParams{})
 ```
 
 ### removeStudentsFromClass
@@ -1160,11 +1368,15 @@ Remove Students from a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.classes.removeStudentsFromClass({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Classes.RemoveStudentsFromClass(context.TODO(), ClassesRemoveStudentsFromClassParams{})
 ```
 
 ### getClassTerms
@@ -1182,11 +1394,15 @@ Get Class terms details
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.classes.getClassTerms({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Classes.GetClassTerms(context.TODO(), ClassesGetClassTermsParams{})
 ```
 
 ### addTeachersToClass
@@ -1204,11 +1420,15 @@ Add Teachers to a Class
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.classes.addTeachersToClass({ classId: "classId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Classes.AddTeachersToClass(context.TODO(), ClassesAddTeachersToClassParams{})
 ```
 
 ## relationships
@@ -1228,11 +1448,15 @@ List of parent-children relationships
 **Returns**: `RelationshipsListOfParentChildrenRelationshipsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.relationships.listOfParentChildrenRelationships({ parentId: "parentId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Relationships.ListOfParentChildrenRelationships(context.TODO(), RelationshipsListOfParentChildrenRelationshipsParams{})
 ```
 
 ### createParentChildRelationship
@@ -1250,11 +1474,15 @@ Create a parent-child relationship
 **Returns**: `RelationshipsCreateParentChildRelationshipResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.relationships.createParentChildRelationship({ parentId: "parentId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Relationships.CreateParentChildRelationship(context.TODO(), RelationshipsCreateParentChildRelationshipParams{})
 ```
 
 ### bulkUpdateParentChildrenRelationships
@@ -1272,11 +1500,15 @@ Bulk update a parent-children relationships
 **Returns**: `RelationshipsBulkUpdateParentChildrenRelationshipsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.relationships.bulkUpdateParentChildrenRelationships({ parentId: "parentId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Relationships.BulkUpdateParentChildrenRelationships(context.TODO(), RelationshipsBulkUpdateParentChildrenRelationshipsParams{})
 ```
 
 ### getParentChildRelationship
@@ -1293,11 +1525,15 @@ Get parent-child relationship
 **Returns**: `RelationshipsGetParentChildRelationshipResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.relationships.getParentChildRelationship({ parentId: "parentId_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Relationships.GetParentChildRelationship(context.TODO(), RelationshipsGetParentChildRelationshipParams{})
 ```
 
 ### updateParentChildRelationship
@@ -1316,11 +1552,15 @@ Update parent-child relationship
 **Returns**: `RelationshipsUpdateParentChildRelationshipResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.relationships.updateParentChildRelationship({ parentId: "parentId_value", id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Relationships.UpdateParentChildRelationship(context.TODO(), RelationshipsUpdateParentChildRelationshipParams{})
 ```
 
 ### deleteParentChildRelationship
@@ -1337,11 +1577,15 @@ Remove parent-child relationship
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.relationships.deleteParentChildRelationship({ parentId: "parentId_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Relationships.DeleteParentChildRelationship(context.TODO(), RelationshipsDeleteParentChildRelationshipParams{})
 ```
 
 ## parents
@@ -1365,11 +1609,15 @@ Get all Parents
 **Returns**: `ParentsListParentsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.parents.listParents();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Parents.ListParents(context.TODO())
 ```
 
 ### createParent
@@ -1383,11 +1631,15 @@ Create New Parent
 **Returns**: `ParentsCreateParentResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.parents.createParent({ body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Parents.CreateParent(context.TODO(), ParentsCreateParentParams{})
 ```
 
 ### getParentById
@@ -1403,11 +1655,15 @@ Get a Parent
 **Returns**: `ParentsGetParentByIdResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.parents.getParentById({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Parents.GetParentById(context.TODO(), ParentsGetParentByIdParams{})
 ```
 
 ### updateParent
@@ -1425,11 +1681,15 @@ Update a Parent
 **Returns**: `ParentsUpdateParentResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.parents.updateParent({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Parents.UpdateParent(context.TODO(), ParentsUpdateParentParams{})
 ```
 
 ### archiveParent
@@ -1445,11 +1705,15 @@ Archive a Parent
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.parents.archiveParent({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Parents.ArchiveParent(context.TODO(), ParentsArchiveParentParams{})
 ```
 
 ### unarchiveParent
@@ -1465,11 +1729,15 @@ Unarchive a Parent
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.parents.unarchiveParent({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Parents.UnarchiveParent(context.TODO(), ParentsUnarchiveParentParams{})
 ```
 
 ### sendParentWelcomeEmail
@@ -1485,11 +1753,15 @@ Send Welcome Email to a Parent
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.parents.sendParentWelcomeEmail({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Parents.SendParentWelcomeEmail(context.TODO(), ParentsSendParentWelcomeEmailParams{})
 ```
 
 ## academics
@@ -1510,11 +1782,15 @@ Create Academic Term
 **Returns**: `AcademicTermResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.createAcademicTerm({ programCode: "programCode_value", academicYearId: "academicYearId_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.CreateAcademicTerm(context.TODO(), AcademicsCreateAcademicTermParams{})
 ```
 
 ### updateAcademicTerm
@@ -1534,11 +1810,15 @@ Update Academic Term
 **Returns**: `AcademicTermResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.updateAcademicTerm({ programCode: "programCode_value", academicYearId: "academicYearId_value", id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.UpdateAcademicTerm(context.TODO(), AcademicsUpdateAcademicTermParams{})
 ```
 
 ### deleteAcademicTerm
@@ -1556,11 +1836,15 @@ Delete Academic Term
 **Returns**: `AcademicTermResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.deleteAcademicTerm({ programCode: "programCode_value", academicYearId: "academicYearId_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.DeleteAcademicTerm(context.TODO(), AcademicsDeleteAcademicTermParams{})
 ```
 
 ### retrieve
@@ -1577,11 +1861,15 @@ Retrieve Academic Year
 **Returns**: `AcademicYearResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.retrieve({ programCode: "programCode_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.Retrieve(context.TODO(), AcademicsRetrieveParams{})
 ```
 
 ### createAcademicYear
@@ -1599,11 +1887,15 @@ Create Academic Year
 **Returns**: `AcademicYearResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.createAcademicYear({ programCode: "programCode_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.CreateAcademicYear(context.TODO(), AcademicsCreateAcademicYearParams{})
 ```
 
 ### getAssessmentTypes
@@ -1619,11 +1911,15 @@ Retrieves Assessment Types
 **Returns**: `AssessmentTypesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.getAssessmentTypes({ programCode: "programCode_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.GetAssessmentTypes(context.TODO(), AcademicsGetAssessmentTypesParams{})
 ```
 
 ### list
@@ -1640,11 +1936,15 @@ Get Academic Year Calendar
 **Returns**: `AcademicYearCalendarResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.list({ programCode: "programCode_value", academicYearId: "academicYearId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.List(context.TODO(), AcademicsListParams{})
 ```
 
 ### getAllTermReports
@@ -1662,11 +1962,15 @@ Get All Term Reports
 **Returns**: `AcademicsGetAllTermReportsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.getAllTermReports({ program: "program_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.GetAllTermReports(context.TODO(), AcademicsGetAllTermReportsParams{})
 ```
 
 ### getTermReport
@@ -1683,11 +1987,15 @@ Get Term Report
 **Returns**: `AcademicsGetTermReportResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.getTermReport({ program: "program_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.GetTermReport(context.TODO(), AcademicsGetTermReportParams{})
 ```
 
 ### downloadTermReportFile
@@ -1705,11 +2013,15 @@ Download Term Report File
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.downloadTermReportFile({ program: "program_value", id: "id_value", kind: "kind_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.DownloadTermReportFile(context.TODO(), AcademicsDownloadTermReportFileParams{})
 ```
 
 ### getSubjectGroups
@@ -1728,11 +2040,15 @@ Retrieves Subject Groups
 **Returns**: `SubjectGroupsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.getSubjectGroups({ programCode: "programCode_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.GetSubjectGroups(context.TODO(), AcademicsGetSubjectGroupsParams{})
 ```
 
 ### createSubjectGroup
@@ -1750,11 +2066,15 @@ Create Subject Group
 **Returns**: `SubjectGroupResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.createSubjectGroup({ programCode: "programCode_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.CreateSubjectGroup(context.TODO(), AcademicsCreateSubjectGroupParams{})
 ```
 
 ### getSubjectGroup
@@ -1771,11 +2091,15 @@ Get Subject Group
 **Returns**: `SubjectGroupResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.getSubjectGroup({ programCode: "programCode_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.GetSubjectGroup(context.TODO(), AcademicsGetSubjectGroupParams{})
 ```
 
 ### updateSubjectGroup
@@ -1794,11 +2118,15 @@ Update Subject Group
 **Returns**: `SubjectGroupResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.updateSubjectGroup({ programCode: "programCode_value", id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.UpdateSubjectGroup(context.TODO(), AcademicsUpdateSubjectGroupParams{})
 ```
 
 ### destroySubjectGroup
@@ -1815,11 +2143,15 @@ Remove Subject Group
 **Returns**: `SubjectGroupResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.destroySubjectGroup({ programCode: "programCode_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.DestroySubjectGroup(context.TODO(), AcademicsDestroySubjectGroupParams{})
 ```
 
 ### getSubjects
@@ -1837,11 +2169,15 @@ Retrieves Subjects
 **Returns**: `SubjectsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.getSubjects({ programCode: "programCode_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.GetSubjects(context.TODO(), AcademicsGetSubjectsParams{})
 ```
 
 ### createSubject
@@ -1859,11 +2195,15 @@ Creates Subject
 **Returns**: `SubjectResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.createSubject({ programCode: "programCode_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.CreateSubject(context.TODO(), AcademicsCreateSubjectParams{})
 ```
 
 ### getSubject
@@ -1880,11 +2220,15 @@ Retrieves Subject
 **Returns**: `SubjectResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.getSubject({ programCode: "programCode_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.GetSubject(context.TODO(), AcademicsGetSubjectParams{})
 ```
 
 ### updateSubject
@@ -1903,11 +2247,15 @@ Updates Subject
 **Returns**: `SubjectResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.updateSubject({ programCode: "programCode_value", id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.UpdateSubject(context.TODO(), AcademicsUpdateSubjectParams{})
 ```
 
 ### deleteSubject
@@ -1924,11 +2272,15 @@ Delete Subject
 **Returns**: `SubjectResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.deleteSubject({ programCode: "programCode_value", id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.DeleteSubject(context.TODO(), AcademicsDeleteSubjectParams{})
 ```
 
 ### getSchool
@@ -1940,11 +2292,15 @@ Get School Details
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.getSchool();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.GetSchool(context.TODO())
 ```
 
 ### listAcademicYears
@@ -1961,11 +2317,15 @@ Get Academic Years
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.listAcademicYears();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.ListAcademicYears(context.TODO())
 ```
 
 ### listGrades
@@ -1977,11 +2337,15 @@ Get School Grades
 **Returns**: `AcademicsListGradesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.listGrades();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.ListGrades(context.TODO())
 ```
 
 ### listSubjects
@@ -1993,11 +2357,15 @@ Get School Subjects
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.listSubjects();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.ListSubjects(context.TODO())
 ```
 
 ### listSchoolTermGradeScales
@@ -2009,11 +2377,15 @@ Get School Term Grade Scales
 **Returns**: `AcademicsListSchoolTermGradeScalesResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.listSchoolTermGradeScales();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.ListSchoolTermGradeScales(context.TODO())
 ```
 
 ### listTermRubrics
@@ -2025,11 +2397,15 @@ Get School Term Grade Rubrics
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.academics.listTermRubrics();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Academics.ListTermRubrics(context.TODO())
 ```
 
 ## students
@@ -2049,11 +2425,15 @@ Update Student Avatar
 **Returns**: `StudentsUpdateStudentAvatarResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.updateStudentAvatar({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.UpdateStudentAvatar(context.TODO(), StudentsUpdateStudentAvatarParams{})
 ```
 
 ### deleteStudentAvatar
@@ -2069,11 +2449,15 @@ Delete Student Avatar
 **Returns**: `StudentsDeleteStudentAvatarResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.deleteStudentAvatar({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.DeleteStudentAvatar(context.TODO(), StudentsDeleteStudentAvatarParams{})
 ```
 
 ### listStudents
@@ -2101,11 +2485,15 @@ Get all Students
 **Returns**: `StudentsListStudentsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.listStudents();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.ListStudents(context.TODO())
 ```
 
 ### createStudent
@@ -2119,11 +2507,15 @@ Create New Student
 **Returns**: `StudentsCreateStudentResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.createStudent({ body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.CreateStudent(context.TODO(), StudentsCreateStudentParams{})
 ```
 
 ### getStudentById
@@ -2139,11 +2531,15 @@ Get a Student
 **Returns**: `StudentsGetStudentByIdResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.getStudentById({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.GetStudentById(context.TODO(), StudentsGetStudentByIdParams{})
 ```
 
 ### updateStudent
@@ -2161,11 +2557,15 @@ Update a Student
 **Returns**: `StudentsUpdateStudentResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.updateStudent({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.UpdateStudent(context.TODO(), StudentsUpdateStudentParams{})
 ```
 
 ### archiveStudent
@@ -2183,11 +2583,15 @@ Archive a Student
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.archiveStudent({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.ArchiveStudent(context.TODO(), StudentsArchiveStudentParams{})
 ```
 
 ### unarchiveStudent
@@ -2203,11 +2607,15 @@ Unarchive a Student
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.unarchiveStudent({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.UnarchiveStudent(context.TODO(), StudentsUnarchiveStudentParams{})
 ```
 
 ### sendStudentWelcomeEmail
@@ -2223,11 +2631,15 @@ Send Welcome Email to a Student
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.students.sendStudentWelcomeEmail({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Students.SendStudentWelcomeEmail(context.TODO(), StudentsSendStudentWelcomeEmailParams{})
 ```
 
 ## onlineAssessment
@@ -2248,11 +2660,15 @@ Update an Online Assessment
 **Returns**: `OnlineAssessmentUpdateOnlineAssessmentResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.onlineAssessment.updateOnlineAssessment({ taskId: "taskId_value", assessPrepUid: "assessPrepUid_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.OnlineAssessment.UpdateOnlineAssessment(context.TODO(), OnlineAssessmentUpdateOnlineAssessmentParams{})
 ```
 
 ## teachers
@@ -2272,11 +2688,15 @@ Update Teacher Avatar
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.updateTeacherAvatar({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.UpdateTeacherAvatar(context.TODO(), TeachersUpdateTeacherAvatarParams{})
 ```
 
 ### deleteTeacherAvatar
@@ -2292,11 +2712,15 @@ Delete Teacher Avatar
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.deleteTeacherAvatar({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.DeleteTeacherAvatar(context.TODO(), TeachersDeleteTeacherAvatarParams{})
 ```
 
 ### listTeachers
@@ -2318,11 +2742,15 @@ Get all Teachers
 **Returns**: `TeachersListTeachersResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.listTeachers();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.ListTeachers(context.TODO())
 ```
 
 ### createTeacher
@@ -2336,11 +2764,15 @@ Create New Teacher
 **Returns**: `TeachersCreateTeacherResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.createTeacher({ body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.CreateTeacher(context.TODO(), TeachersCreateTeacherParams{})
 ```
 
 ### getTeacherById
@@ -2356,11 +2788,15 @@ Get a Teacher
 **Returns**: `TeachersGetTeacherByIdResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.getTeacherById({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.GetTeacherById(context.TODO(), TeachersGetTeacherByIdParams{})
 ```
 
 ### updateTeacher
@@ -2378,11 +2814,15 @@ Update a Teacher
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.updateTeacher({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.UpdateTeacher(context.TODO(), TeachersUpdateTeacherParams{})
 ```
 
 ### archiveTeacher
@@ -2398,11 +2838,15 @@ Archive a Teacher
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.archiveTeacher({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.ArchiveTeacher(context.TODO(), TeachersArchiveTeacherParams{})
 ```
 
 ### unarchiveTeacher
@@ -2418,11 +2862,15 @@ Unarchive a Teacher
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.unarchiveTeacher({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.UnarchiveTeacher(context.TODO(), TeachersUnarchiveTeacherParams{})
 ```
 
 ### listTeacherClassesMemberships
@@ -2440,11 +2888,15 @@ Get teacher Classes Memberships
 **Returns**: `TeachersListTeacherClassesMembershipsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.listTeacherClassesMemberships({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.ListTeacherClassesMemberships(context.TODO(), TeachersListTeacherClassesMembershipsParams{})
 ```
 
 ### listTeacherGroupsMemberships
@@ -2461,11 +2913,15 @@ Get teacher Groups Memberships
 **Returns**: `TeachersListTeacherGroupsMembershipsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.listTeacherGroupsMemberships({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.ListTeacherGroupsMemberships(context.TODO(), TeachersListTeacherGroupsMembershipsParams{})
 ```
 
 ### sendTeacherWelcomeEmail
@@ -2481,11 +2937,15 @@ Send Welcome Email to a Teacher
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.teachers.sendTeacherWelcomeEmail({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Teachers.SendTeacherWelcomeEmail(context.TODO(), TeachersSendTeacherWelcomeEmailParams{})
 ```
 
 ## unitClassAssignments
@@ -2507,11 +2967,15 @@ List Unit-Class Assignments
 **Returns**: `UnitClassAssignmentsListUnitClassAssignmentsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.unitClassAssignments.listUnitClassAssignments();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.UnitClassAssignments.ListUnitClassAssignments(context.TODO())
 ```
 
 ## units
@@ -2533,11 +2997,15 @@ Get all Units
 **Returns**: `UnitsListUnitsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.units.listUnits();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Units.ListUnits(context.TODO())
 ```
 
 ### getUnitById
@@ -2553,11 +3021,15 @@ Get a Unit
 **Returns**: `UnitsGetUnitByIdResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.units.getUnitById({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Units.GetUnitById(context.TODO(), UnitsGetUnitByIdParams{})
 ```
 
 ## projects
@@ -2578,11 +3050,15 @@ Get CAS Experiences for Students in a Year Group
 **Returns**: `CasExperiencesStudentsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupCasExperiencesStudents({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupCasExperiencesStudents(context.TODO(), ProjectsListYearGroupCasExperiencesStudentsParams{})
 ```
 
 ### getYearGroupCas
@@ -2598,11 +3074,15 @@ Get CAS settings for a Year Group
 **Returns**: `CasSettings`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.getYearGroupCas({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.GetYearGroupCas(context.TODO(), ProjectsGetYearGroupCasParams{})
 ```
 
 ### listYearGroupPblProposalStudentsDetails
@@ -2621,11 +3101,15 @@ Get Student Proposal Progress for a Year Group PBL
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupPblProposalStudentsDetails({ yearGroupId: "yearGroupId_value", projectId: "projectId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupPblProposalStudentsDetails(context.TODO(), ProjectsListYearGroupPblProposalStudentsDetailsParams{})
 ```
 
 ### listYearGroupPblReflectionsStudentsDetails
@@ -2644,11 +3128,15 @@ Get Student Reflection Progress for a Year Group PBL
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupPblReflectionsStudentsDetails({ yearGroupId: "yearGroupId_value", projectId: "projectId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupPblReflectionsStudentsDetails(context.TODO(), ProjectsListYearGroupPblReflectionsStudentsDetailsParams{})
 ```
 
 ### listYearGroupPblTodosStudentsDetails
@@ -2669,11 +3157,15 @@ Get Student Personal Todos and Deadlines for a Year Group PBL
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupPblTodosStudentsDetails({ yearGroupId: "yearGroupId_value", projectId: "projectId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupPblTodosStudentsDetails(context.TODO(), ProjectsListYearGroupPblTodosStudentsDetailsParams{})
 ```
 
 ### listYearGroupPblJournalStudentsDetails
@@ -2692,11 +3184,15 @@ Get Student Journal Entries for a Year Group PBL
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupPblJournalStudentsDetails({ yearGroupId: "yearGroupId_value", projectId: "projectId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupPblJournalStudentsDetails(context.TODO(), ProjectsListYearGroupPblJournalStudentsDetailsParams{})
 ```
 
 ### listYearGroupPblDocumentsStudentsDetails
@@ -2715,11 +3211,15 @@ Get Student Documents for a Year Group PBL
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupPblDocumentsStudentsDetails({ yearGroupId: "yearGroupId_value", projectId: "projectId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupPblDocumentsStudentsDetails(context.TODO(), ProjectsListYearGroupPblDocumentsStudentsDetailsParams{})
 ```
 
 ### listYearGroupPblPresentationStudentsDetails
@@ -2738,11 +3238,15 @@ Get Student Presentations for a Year Group PBL
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupPblPresentationStudentsDetails({ yearGroupId: "yearGroupId_value", projectId: "projectId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupPblPresentationStudentsDetails(context.TODO(), ProjectsListYearGroupPblPresentationStudentsDetailsParams{})
 ```
 
 ### listYearGroupPblNotesAndInterviewsStudentsDetails
@@ -2761,11 +3265,15 @@ Get Student Notes & Interviews for a Year Group PBL
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupPblNotesAndInterviewsStudentsDetails({ yearGroupId: "yearGroupId_value", projectId: "projectId_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupPblNotesAndInterviewsStudentsDetails(context.TODO(), ProjectsListYearGroupPblNotesAndInterviewsStudentsDetailsParams{})
 ```
 
 ### listYearGroupProjectBasedLearningTemplates
@@ -2782,11 +3290,15 @@ Get all Year Group Project Based Learning
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.projects.listYearGroupProjectBasedLearningTemplates({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.Projects.ListYearGroupProjectBasedLearningTemplates(context.TODO(), ProjectsListYearGroupProjectBasedLearningTemplatesParams{})
 ```
 
 ## yearGroups
@@ -2807,11 +3319,15 @@ Get Service Learning Categories for Students in a Year Group
 **Returns**: `ServiceLearningCategoriesStudentsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.yearGroups.listYearGroupServiceLearningCategoriesStudents({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.YearGroups.ListYearGroupServiceLearningCategoriesStudents(context.TODO(), YearGroupsListYearGroupServiceLearningCategoriesStudentsParams{})
 ```
 
 ### listYearGroupServiceLearningOutcomesStudents
@@ -2830,11 +3346,15 @@ Get Service Learning Outcomes for Students in a Year Group
 **Returns**: `ServiceLearningOutcomesStudentsResponse`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.yearGroups.listYearGroupServiceLearningOutcomesStudents({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.YearGroups.ListYearGroupServiceLearningOutcomesStudents(context.TODO(), YearGroupsListYearGroupServiceLearningOutcomesStudentsParams{})
 ```
 
 ### getYearGroupServiceLearning
@@ -2850,11 +3370,15 @@ Get Service Learning settings for a Year Group
 **Returns**: `ServiceLearningSettings`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.yearGroups.getYearGroupServiceLearning({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.YearGroups.GetYearGroupServiceLearning(context.TODO(), YearGroupsGetYearGroupServiceLearningParams{})
 ```
 
 ### listYearGroups
@@ -2874,11 +3398,15 @@ Get all Year Groups
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.yearGroups.listYearGroups();
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.YearGroups.ListYearGroups(context.TODO())
 ```
 
 ### listStudentsFromYearGroups
@@ -2897,11 +3425,15 @@ Get Students for a Year Group
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.yearGroups.listStudentsFromYearGroups({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.YearGroups.ListStudentsFromYearGroups(context.TODO(), YearGroupsListStudentsFromYearGroupsParams{})
 ```
 
 ### addStudentToYearGroup
@@ -2919,11 +3451,15 @@ Add Students to a Year Group
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.yearGroups.addStudentToYearGroup({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.YearGroups.AddStudentToYearGroup(context.TODO(), YearGroupsAddStudentToYearGroupParams{})
 ```
 
 ### removeStudentToYearGroup
@@ -2941,11 +3477,15 @@ Remove Students from a Year Group
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.yearGroups.removeStudentToYearGroup({ id: "id_value", body: { /* ... */ } });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.YearGroups.RemoveStudentToYearGroup(context.TODO(), YearGroupsRemoveStudentToYearGroupParams{})
 ```
 
 ### listAdvisorsFromYearGroup
@@ -2961,9 +3501,13 @@ Get Advisors
 **Returns**: `void`
 
 ```ts
-import { ManageBacPlus } from "@veritymedia/managebacplus";
+import { ManageBacPlus } from "@veritymedia/managebac-sdk";
 
 const client = new ManageBacPlus();
 const result = await client.yearGroups.listAdvisorsFromYearGroup({ id: "id_value" });
 console.log(result);
+```
+```go
+client := managebacplus.NewClient()
+result, err := client.YearGroups.ListAdvisorsFromYearGroup(context.TODO(), YearGroupsListAdvisorsFromYearGroupParams{})
 ```

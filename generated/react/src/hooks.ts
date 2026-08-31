@@ -1,5 +1,5 @@
 import { useInfiniteQuery, useMutation, useQuery } from "@tanstack/react-query";
-import type ManageBacPlus from "@veritymedia/managebacplus";
+import type ManageBacPlus from "@veritymedia/managebac-sdk";
 
 /** Create typed TanStack Query hooks bound to a API V2P3 client instance. */
 export function createHooks(client: ManageBacPlus) {

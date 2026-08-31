@@ -6,4 +6,6 @@ spec:
   path: "openapi/managebac-plus-public-apis-v2p3.yaml"
 targets:
   typescript:
-      package_name: "@veritymedia/managebacplus"
+      package_name: "@veritymedia/managebac-sdk"
+  go:
+    module_path: github.com/veritymedia/managebac-sdk

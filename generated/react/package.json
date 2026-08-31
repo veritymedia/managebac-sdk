@@ -1,18 +1,17 @@
 {
-  "name": "veritymedia-managebacplus-react",
-  "version": "0.2.3",
+  "name": "veritymedia-managebac-sdk-react",
+  "version": "v2p3",
   "private": true,
   "type": "module",
   "peerDependencies": {
     "react": ">=18",
     "@tanstack/react-query": ">=5",
-    "@veritymedia/managebacplus": "*"
+    "@veritymedia/managebac-sdk": "*"
   },
   "scripts": {
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
-    "@veritymedia/managebacplus": "workspace:*",
     "typescript": "^6.0.3"
   }
 }
