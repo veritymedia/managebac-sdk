@@ -1,6 +1,6 @@
 {
   "name": "@veritymedia/managebacplus",
-  "version": "v2p3",
+  "version": "0.2.3",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

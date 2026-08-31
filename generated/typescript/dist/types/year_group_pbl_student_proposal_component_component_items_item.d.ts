@@ -1,0 +1,5 @@
+import type { YearGroupPblStudentProposalComponentComponentItemsItemVariant1 } from "./year_group_pbl_student_proposal_component_component_items_item_variant1.js";
+import type { YearGroupPblStudentProposalComponentComponentItemsItemVariant2 } from "./year_group_pbl_student_proposal_component_component_items_item_variant2.js";
+export type YearGroupPblStudentProposalComponentComponentItemsItem = YearGroupPblStudentProposalComponentComponentItemsItemVariant1 | YearGroupPblStudentProposalComponentComponentItemsItemVariant2 | {
+    [key: string]: unknown;
+};

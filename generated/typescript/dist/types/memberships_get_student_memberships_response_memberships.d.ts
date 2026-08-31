@@ -1,0 +1,8 @@
+import type { MembershipsGetStudentMembershipsResponseMembershipsClassesItem } from "./memberships_get_student_memberships_response_memberships_classes_item.js";
+import type { MembershipsGetStudentMembershipsResponseMembershipsGroupsItem } from "./memberships_get_student_memberships_response_memberships_groups_item.js";
+import type { MembershipsGetStudentMembershipsResponseMembershipsYearGroupsItem } from "./memberships_get_student_memberships_response_memberships_year_groups_item.js";
+export interface MembershipsGetStudentMembershipsResponseMemberships {
+    classes?: MembershipsGetStudentMembershipsResponseMembershipsClassesItem[];
+    groups?: MembershipsGetStudentMembershipsResponseMembershipsGroupsItem[];
+    yearGroups?: MembershipsGetStudentMembershipsResponseMembershipsYearGroupsItem[];
+}

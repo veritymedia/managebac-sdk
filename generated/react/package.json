@@ -1,6 +1,6 @@
 {
   "name": "veritymedia-managebacplus-react",
-  "version": "v2p3",
+  "version": "0.2.3",
   "private": true,
   "type": "module",
   "peerDependencies": {
@@ -12,6 +12,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
+    "@veritymedia/managebacplus": "workspace:*",
     "typescript": "^6.0.3"
   }
 }

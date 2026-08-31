@@ -1,6 +1,6 @@
 {
   "name": "manage-bac-plus-connect",
-  "version": "v2p3",
+  "version": "0.2.3",
   "private": true,
   "type": "module",
   "scripts": {

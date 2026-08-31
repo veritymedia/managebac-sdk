@@ -1,16 +1,14 @@
 {
   "name": "managebac-sdk",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "ManageBac+ SDK monorepo",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.19.0",
-  "dependencies": {
-    "@crevious/inox": "^0.1.2"
-  }
+  "packageManager": "pnpm@10.19.0"
 }
