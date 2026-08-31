@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "managebac": {
+      "type": "local",
+      "command": ["node","/abs/path/sdk/mcp/dist/server.js", "--scope", "read"],
+      "enabled": true,
+      "environment": { "PETSTORE_API_KEY": "sk-..." }
+    }
+  }
+}
