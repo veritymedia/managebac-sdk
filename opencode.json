@@ -3,9 +3,9 @@
   "mcp": {
     "managebac": {
       "type": "local",
-      "command": ["node","/abs/path/sdk/mcp/dist/server.js", "--scope", "read"],
+      "command": ["node","{env:MCP_ABS_PATH}", "--scope", "read"],
       "enabled": true,
-      "environment": { "PETSTORE_API_KEY": "sk-..." }
+      "environment": { "MANAGEBAC_API_KEY": "{env:MANAGEBAC_API_KEY}" }
     }
   }
 }
